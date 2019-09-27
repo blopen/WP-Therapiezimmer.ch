@@ -418,6 +418,37 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_5d8e63a23051a": {
+                    "key": "layout_5d8e63a23051a",
+                    "name": "Hero",
+                    "label": "Hero",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5d8e63a23051b",
+                            "label": "Hero Felder",
+                            "name": "Hero_fields",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5bfbb622739c1"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 1
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Seitenbaukasten Element hinzufügen",
@@ -454,5 +485,5 @@
     ],
     "active": 0,
     "description": "",
-    "modified": 1561381979
+    "modified": 1569612744
 }
