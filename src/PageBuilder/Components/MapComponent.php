@@ -88,8 +88,6 @@ class MapComponent extends BaseComponent
         $this->mapText = $this->getComponentField('map_text');
         $this->mapAlignment = $this->getComponentField('map_alignment');
         $this->mapId = uniqid();
-        /* Add the below line, ONLY if controls or any other advanced styling needs to be applied */
-        StyleController::addNodeDependency(['mapbox-gl-styles' => 'mapbox-gl/dist/mapbox-gl.css']);
     }
     
     /**

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Basic template for the presentation of a Map component
  *
@@ -16,18 +17,16 @@
         </header>
     <?php endif; ?>
     <div class="ct-component-content <?php echo $this->containerClass; ?>">
-        <div class="uk-grid ct-component-content <?php echo($this->isTwoColumn ? 'uk-child-width-1-2@l' : 'uk-child-width-1-1@l'); ?>"
-             data-uk-grid>
+        <div class="uk-grid ct-component-content <?php echo ($this->isTwoColumn ? 'uk-child-width-1-2@l' : 'uk-child-width-1-1@l'); ?>" data-uk-grid>
             <?php if ($this->mapAlignment) : ?>
                 <div>
-                    <div style="min-height: 1px" id="map-<?php echo $this->mapId; ?>" data-map
-                         data-map-lon="<?php echo $this->longitude; ?>"
-                         data-map-lat="<?php echo $this->latitude; ?>"></div>
+                    <div calss="map" style="height: 400px;
+        width: 100%; " id="map-<?php echo $this->mapId; ?>" data-map data-map-lon="<?php echo $this->longitude; ?>" data-map-lat="<?php echo $this->latitude; ?>"></div>
                 </div>
                 <div>
                     <p><?php echo wpautop($this->mapText); ?></p>
                 </div>
-            <?php else: ?>
+            <?php else : ?>
                 <?php if ($this->isTwoColumn) : ?>
                     <div>
                         <?php if (isset($this->mapAlignment)) : ?>
@@ -36,9 +35,8 @@
                     </div>
                 <?php endif; ?>
                 <div>
-                    <div style="min-height: 1px" id="map-<?php echo $this->mapId; ?>" data-map
-                         data-map-lon="<?php echo $this->longitude; ?>"
-                         data-map-lat="<?php echo $this->latitude; ?>"></div>
+                    <div calss="map" style="height: 400px;
+        width: 100%;" id="map-<?php echo $this->mapId; ?>" data-map data-map-lon="<?php echo $this->longitude; ?>" data-map-lat="<?php echo $this->latitude; ?>"></div>
                 </div>
             <?php endif; ?>
         </div>

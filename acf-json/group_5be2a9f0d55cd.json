@@ -1,28 +1,31 @@
 {
-    "key": "group_5c80dbfcb7cce",
-    "title": "Themen Optionen",
+    "key": "group_5be2a9f0d55cd",
+    "title": "Mapbox API Key",
     "fields": [
         {
-            "key": "field_5c80dc07ea1fc",
-            "label": "De",
-            "name": "",
-            "type": "tab",
+            "key": "field_5be1696569543",
+            "label": "Mapbox Maps API Key",
+            "name": "mapbox_api_key",
+            "type": "text",
             "instructions": "",
-            "required": 0,
+            "required": 1,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
                 "class": "",
                 "id": ""
             },
-            "placement": "top",
-            "endpoint": 0
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
         },
         {
-            "key": "field_5c80dc24ea1fe",
-            "label": "Optionen",
-            "name": "de",
-            "type": "clone",
+            "key": "field_5c0c23b163be7",
+            "label": "Adresse",
+            "name": "map_wysiwyg",
+            "type": "wysiwyg",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -31,13 +34,11 @@
                 "class": "",
                 "id": ""
             },
-            "clone": [
-                "group_5c79212113db6"
-            ],
-            "display": "seamless",
-            "layout": "block",
-            "prefix_label": 0,
-            "prefix_name": 1
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 1,
+            "delay": 0
         }
     ],
     "location": [
@@ -57,5 +58,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1569615462
+    "modified": 1569616322
 }
