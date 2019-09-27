@@ -1,14 +1,14 @@
 {
-    "key": "group_5c7500ea26e50",
-    "title": "Seitenelement: Seiteninformationen",
+    "key": "group_5be2a9f0d55cd",
+    "title": "Mapbox API Key",
     "fields": [
         {
-            "key": "field_5c75012751e16",
-            "label": "Optionaler Titel",
-            "name": "optional_page_title",
+            "key": "field_5be1696569543",
+            "label": "Mapbox Maps API Key",
+            "name": "mapbox_api_key",
             "type": "text",
-            "instructions": "Falls Sie den Titel der Seite selber bestimmen möchten können Sie dies hier tun. Wenn dieses Feld leer ist wird automatisch der Seitentiel verwendet.",
-            "required": 0,
+            "instructions": "",
+            "required": 1,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
@@ -22,11 +22,11 @@
             "maxlength": ""
         },
         {
-            "key": "field_5c7500fd51e15",
-            "label": "Leadtext",
-            "name": "page_lead",
-            "type": "textarea",
-            "instructions": "Geben Sie hier eine kurze Beschreibung der Seite.",
+            "key": "field_5c0c23b163be7",
+            "label": "Adresse",
+            "name": "map_wysiwyg",
+            "type": "wysiwyg",
+            "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -35,18 +35,18 @@
                 "id": ""
             },
             "default_value": "",
-            "placeholder": "",
-            "maxlength": "",
-            "rows": "",
-            "new_lines": ""
+            "tabs": "all",
+            "toolbar": "basic",
+            "media_upload": 1,
+            "delay": 0
         }
     ],
     "location": [
         [
             {
-                "param": "post_type",
+                "param": "options_page",
                 "operator": "==",
-                "value": "post"
+                "value": "theme-options"
             }
         ]
     ],
@@ -56,7 +56,7 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "active": 0,
+    "active": 1,
     "description": "",
-    "modified": 1569603849
+    "modified": 1569616322
 }

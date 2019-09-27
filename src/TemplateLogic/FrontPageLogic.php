@@ -37,6 +37,12 @@ class FrontPageLogic extends ABaseLogic
      * @var string
      */
     public $lead;
+    /**
+     * The lead text for this header
+     *
+     * @var string
+     */
+    public $optional;
 
     /**
      * The page title of this header
