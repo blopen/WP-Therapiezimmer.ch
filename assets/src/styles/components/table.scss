@@ -1,0 +1,78 @@
+$table-head-background-color: $background-gray;
+$table-title-color: $heading-color;
+
+$table-row-background-color: $white;
+$table-row-background-color-hover: $background-gray;
+$table-text-color: $font-color;
+$table-text-font-size: 1.1875rem;
+
+$table-border-horizontal: 1px solid $background-gray;
+$table-border-vertical: none;
+$table-padding-horizontal: .75rem;
+$table-padding-vertical: .75rem;
+
+$table-text-alignment: left;
+$table-header-alignment: $table-text-alignment;
+
+
+.ct-component-table {
+
+
+  .ct-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: $table-border-horizontal;
+  }
+
+  .ct-table-header-row {
+    background-color: $table-head-background-color;
+    @media (max-width: $breakpoint-medium-max) {
+      display: none;
+    }
+  }
+
+  .ct-table-row {
+    transition: all 200ms ease-in-out;
+
+    &:hover {
+      background-color: $table-row-background-color-hover;
+    }
+
+    @media (max-width: $breakpoint-medium-max) {
+      border: 1px solid $black;
+    }
+  }
+
+  .ct-table-data,
+  .ct-table-title {
+    border-top: $table-border-horizontal;
+    border-bottom: $table-border-horizontal;
+    border-left: $table-border-vertical;
+    border-right: $table-border-vertical;
+    padding: $table-padding-horizontal $table-padding-vertical;
+  }
+
+  .ct-table-title {
+    text-align: $table-text-alignment;
+    color: $table-title-color;
+    font-size: $table-text-font-size;
+  }
+
+  .ct-table-data {
+    text-align: $table-header-alignment;
+    color: $table-text-color;
+    font-size: $table-text-font-size;
+    position: relative;
+    @media (max-width: $breakpoint-medium-max) {
+      padding-top: 2rem;
+      display: block;
+      &:before {
+        content: attr(data-mobile-heading);
+        font-size: 0.75rem;
+        position: absolute;
+        top: 3px;
+        left: 5px;
+      }
+    }
+  }
+}

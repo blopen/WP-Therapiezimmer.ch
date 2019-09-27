@@ -1,0 +1,28 @@
+$iconlist-boxshadow-color: $font-color;
+
+.ct-component-iconlist {
+  .ct-component-iconlist-leadtext {
+    padding-bottom: 2.25rem;
+  }
+}
+
+.ct-card-iconlist {
+  border-radius: 3px;
+  box-shadow: 0 1px 3px rgba($iconlist-boxshadow-color, 0.2);
+  padding: 1.875rem;
+  margin-bottom: 1.25rem;
+
+  .ct-card-iconlist-icon {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .ct-card-iconlist-title {
+    font-size: 1.875rem;
+  }
+}

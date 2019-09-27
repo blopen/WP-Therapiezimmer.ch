@@ -1,0 +1,10 @@
+.ct-component-text {
+  font-size: 1.1875rem;
+  line-height: 2rem;
+
+  .ct-component-text-2-columns {
+    @media (max-width: $breakpoint-medium-max) {
+      margin-bottom: 3rem;
+    }
+  }
+}

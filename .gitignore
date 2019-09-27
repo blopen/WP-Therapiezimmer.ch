@@ -1,0 +1,27 @@
+# Mac specifc files
+._*
+.DS_Store
+
+# compiled assets directory -> remove this line if the host has no gulp installed
+assets/dist
+
+# Vendor directorys
+/node_modules/
+/vendor/
+
+# NPM specific
+npm-debug.log
+
+# Lockfiles
+composer.lock
+yarn.lock
+package-lock.json
+
+# language backup files
+*.po~
+*.mo~
+*.pot~
+
+# Editors
+.vscode
+.editorconfig

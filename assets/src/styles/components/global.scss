@@ -1,0 +1,26 @@
+.ct-component {
+  &.first-component {
+    padding-top: 0;
+  }
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+
+  &.uk-background-transparent + &.uk-background-transparent {
+    padding-top: 0;
+  }
+
+  .ct-component-title {
+    margin-bottom: 2.25rem;
+  }
+}
+
+.ct-template-with-sidebar {
+  @media (max-width: $breakpoint-medium-max) {
+
+    .ct-component:last-child {
+      padding-bottom: 40px;
+    }
+  }
+}

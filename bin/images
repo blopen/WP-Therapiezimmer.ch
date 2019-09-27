@@ -1,0 +1,8 @@
+#!/bin/bash
+log () {
+    echo "[$(date +'%H:%M:%S')] $1"
+}
+start=$(date +%s);
+node_modules/imagemin-cli/cli.js assets/src/images/**/* --out-dir="assets/dist/images"
+end=$(date +%s);
+log "IMAGES task completed in $((end-start)) seconds"

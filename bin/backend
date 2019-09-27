@@ -1,0 +1,15 @@
+#!/bin/bash
+log () {
+    echo "[$(date +'%H:%M:%S')] $1"
+}
+start=$(date +%s);
+log "BACKEND task started"
+rm -rf assets/dist/backend 2>/dev/null
+mkdir assets/dist/backend
+node-sass assets/src/backend/backend.scss | node_modules/clean-css-cli/bin/cleancss -O1 > assets/dist/backend/backend.min.css
+node_modules/postcss-cli/bin/postcss assets/dist/backend/backend.min.css --no-map -u autoprefixer -r
+node_modules/jshint/bin/jshint assets/src/backend/backend.js
+browserify assets/src/backend/backend.js -t [ babelify --presets [ @babel/preset-env ] ] -o assets/dist/backend/backend_tmp.js
+node_modules/terser/bin/terser -c -- assets/dist/backend/backend_tmp.js > assets/dist/backend/backend.min.js
+end=$(date +%s);
+log "BACKEND task completed in $((end-start)) seconds"

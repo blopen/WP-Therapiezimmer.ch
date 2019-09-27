@@ -1,0 +1,21 @@
+@import "../styles/variables/variables";
+
+$data-layout-hover-color: $white;
+body {
+  font-family: $global-font-family;
+
+  a[data-layout="Gallery"] {
+    &:hover {
+      &:before {
+        content: url(../../dist/images/gallery.jpg);
+        position: absolute;
+        right: 140px;
+        top: -200px;
+      }
+
+      color: $data-layout-hover-color;
+      font-weight: 600;
+      font-size: 12px;
+    }
+  }
+}

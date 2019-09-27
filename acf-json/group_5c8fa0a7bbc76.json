@@ -1,0 +1,370 @@
+{
+    "key": "group_5c8fa0a7bbc76",
+    "title": "Seitenbaukasten Komponent: Tabelle",
+    "fields": [
+        {
+            "key": "field_5c8fa0cc1cdaf",
+            "label": "Titel",
+            "name": "table_title",
+            "type": "text",
+            "instructions": "Geben Sie der Tabelle einen Titel",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5c8fa1e31cdb7",
+            "label": "Anzahl Spalten",
+            "name": "column_count",
+            "type": "radio",
+            "instructions": "Wählen Sie aus, wie viele Spalten die Tabelle haben soll.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "2": "Zwei",
+                "3": "Drei",
+                "4": "Vier",
+                "5": "Fünf"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": 5,
+            "layout": "vertical",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_5c8fa1211cdb2",
+            "label": "Titel Spalte eins",
+            "name": "table_title_column_1",
+            "type": "text",
+            "instructions": "Titel der ersten Tabellenspalte",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5c8fa16b1cdb5",
+            "label": "Titel Spalte zwei",
+            "name": "table_title_column_2",
+            "type": "text",
+            "instructions": "Titel der zweiten Tabellenspalte",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5c8fa16f1cdb6",
+            "label": "Titel Spalte drei",
+            "name": "table_title_column_3",
+            "type": "text",
+            "instructions": "Titel der dritten Tabellenspalte",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5c8fa1e31cdb7",
+                        "operator": "==",
+                        "value": "3"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5c8fa1e31cdb7",
+                        "operator": "==",
+                        "value": "4"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5c8fa1e31cdb7",
+                        "operator": "==",
+                        "value": "5"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5c8fa16a1cdb4",
+            "label": "Titel Spalte vier",
+            "name": "table_title_column_4",
+            "type": "text",
+            "instructions": "Titel der vireten Tabellenspalte",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5c8fa1e31cdb7",
+                        "operator": "==",
+                        "value": "4"
+                    }
+                ],
+                [
+                    {
+                        "field": "field_5c8fa1e31cdb7",
+                        "operator": "==",
+                        "value": "5"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5c8fa16a1cdb3",
+            "label": "Titel Spalte fünf",
+            "name": "table_title_column_5",
+            "type": "text",
+            "instructions": "Titel der fünften Tabellenspalte",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5c8fa1e31cdb7",
+                        "operator": "==",
+                        "value": "5"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5c8fa0e11cdb0",
+            "label": "Tabelle",
+            "name": "table_rows",
+            "type": "repeater",
+            "instructions": "Erfassen Sie eine Tabelle.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "Reihe hinzufügen",
+            "sub_fields": [
+                {
+                    "key": "field_5c8fa1091cdb1",
+                    "label": "Inhalt Spalte eins",
+                    "name": "column_1",
+                    "type": "text",
+                    "instructions": "Inhalt der ersten Spalte",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5c8fa3061cdbc",
+                    "label": "Inhalt Spalte zwei",
+                    "name": "column_2",
+                    "type": "text",
+                    "instructions": "Inhalt der zweiten Spalte",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5c8fa3071cdbd",
+                    "label": "Inhalt Spalte drei",
+                    "name": "column_3",
+                    "type": "text",
+                    "instructions": "Inhalt der dritten Spalte",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5c8fa1e31cdb7",
+                                "operator": "==",
+                                "value": "3"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_5c8fa1e31cdb7",
+                                "operator": "==",
+                                "value": "4"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_5c8fa1e31cdb7",
+                                "operator": "==",
+                                "value": "5"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5c8fa3091cdbe",
+                    "label": "Inhalt Spalte vier",
+                    "name": "column_4",
+                    "type": "text",
+                    "instructions": "Inhalt der vierten Spalte",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5c8fa1e31cdb7",
+                                "operator": "==",
+                                "value": "4"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_5c8fa1e31cdb7",
+                                "operator": "==",
+                                "value": "5"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5c8fa30a1cdbf",
+                    "label": "Inhalt Spalte fünf",
+                    "name": "column_5",
+                    "type": "text",
+                    "instructions": "Inhalt der fünften Spalte",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5c8fa1e31cdb7",
+                                "operator": "==",
+                                "value": "5"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "!=",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "",
+    "modified": 1559914151
+}

@@ -1,0 +1,243 @@
+$form-border-radius: 2px;
+$form-border: 1px solid $light-gray;
+$form-box-shadow: none;
+$form-padding: 1.25rem;
+$input-padding: .625rem;
+$field-margin: $input-padding*2;
+
+/**
+ * General Form stylings and resets
+ */
+form {
+  border: $form-border;
+  padding: $form-padding;
+
+  * {
+    width: 100%;
+    font-size: $global-font-size;
+    color: $font-color;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @extend .uk-h2;
+    @extend .ct-component-title;
+  }
+
+  input,
+  textarea {
+    padding: .75rem;
+    box-sizing: border-box;
+    border: $form-border;
+    box-shadow: $form-box-shadow;
+    outline: none;
+    border-radius: $form-border-radius;
+  }
+
+  textarea {
+    resize: none;
+  }
+
+  ul {
+    padding: 0;
+    list-style-type: none;
+  }
+
+  label {
+    display: inline-block;
+    font-size: $global-font-size;
+    margin-bottom: .5rem;
+  }
+
+  input[type="submit"] {
+    cursor: pointer;
+  }
+}
+
+.ct-checkbox,
+.ct-radiobutton {
+  li {
+    position: relative;
+    padding-left: 1.875rem;
+    width: auto;
+  }
+
+  .ginput_container {
+    input {
+      position: absolute;
+      left: 0;
+      top: 3px;
+      width: .75rem;
+      visibility: hidden;
+
+      &:checked ~ label:before {
+        background: $primary-color;
+        border: 3px solid $medium-gray;
+        box-sizing: border-box;
+      }
+    }
+
+    label {
+      width: auto;
+
+      &:before {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 1rem;
+        height: 1rem;
+        left: 0;
+        top: .25rem;
+        background-color: $medium-gray;
+        transition: background 250ms ease-in-out;
+      }
+    }
+  }
+
+
+  &.ct-inline {
+    @media(min-width: $breakpoint-medium) {
+      ul {
+        display: flex;
+      }
+
+      li {
+        margin-right: 1.25rem;
+      }
+    }
+  }
+}
+
+.ct-radiobutton {
+  .ginput_container {
+    label:before {
+      border-radius: 50%;
+    }
+  }
+}
+
+/**
+ * Gravityform specific
+ */
+
+.gform_heading,
+.gform_footer {
+  padding: $input-padding;
+  width: auto;
+}
+
+.gform_fields {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+  //CUSTOM CLASSES ADDED IN BACKEND
+  .ct-large {
+    width: calc(75% - #{$field-margin});
+
+    &.right {
+      margin-left: calc(25% + #{$field-margin / 2});
+    }
+  }
+
+  .ct-medium {
+    width: calc(50% - #{$field-margin});
+
+    &.right {
+      margin-left: calc(50% + #{$field-margin / 2});
+    }
+  }
+
+  .ct-small {
+    width: calc(25% - #{$field-margin});
+
+    &.right {
+      margin-left: calc(75% + #{$field-margin / 2});
+    }
+  }
+
+  @media (max-width: $breakpoint-medium-max) {
+    .ct-small {
+      width: calc(50% - #{$field-margin});
+
+      &.right {
+        margin-left: calc(50% + #{$field-margin / 2});
+      }
+    }
+  }
+  @media (max-width: $breakpoint-small-max) {
+    .ct-small, .ct-medium, .ct-large {
+      width: 100%;
+
+      &.right {
+        margin-left: $field-margin / 2;
+      }
+    }
+  }
+}
+
+.gfield {
+  margin-top: 1.875rem;
+  margin-left: #{$field-margin / 2};
+  margin-right: #{$field-margin / 2};
+
+  .small {
+    width: 25%;
+  }
+
+  .medium {
+    width: 50%;
+  }
+
+  .large {
+    width: 100%;
+  }
+
+  .datepicker {
+    width: 100%;
+  }
+}
+
+.gfield_description {
+  margin-top: .75rem;
+}
+
+// Time select field
+.clear-multi {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+
+  .ginput_container {
+    width: 48%;
+  }
+
+  i {
+    position: absolute;
+    left: 49%;
+    top: $input-padding;
+    width: $input-padding;
+  }
+}
+
+/*
+ * Validation
+ */
+
+.gfield_error {
+  .validation_message {
+    @extend .uk-text-danger;
+  }
+
+  input,
+  textarea {
+    border-color: $global-danger-background;
+  }
+}
+
+.validation_error {
+  @extend .uk-text-danger;
+  padding: $input-padding;
+}

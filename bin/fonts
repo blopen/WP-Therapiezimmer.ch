@@ -1,0 +1,11 @@
+#!/bin/bash
+log () {
+    echo "[$(date +'%H:%M:%S')] $1"
+}
+start=$(date +%s);
+log "FONTS task started"
+rm -rf assets/dist/fonts
+mkdir assets/dist/fonts
+cp assets/src/fonts/* assets/dist/fonts/
+end=$(date +%s);
+log "FONTS task completed in $((end-start)) seconds"

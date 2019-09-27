@@ -1,0 +1,67 @@
+{
+    "key": "group_5c8699b991f81",
+    "title": "Seitenbaukasten Komponent: Video",
+    "fields": [
+        {
+            "key": "field_5c8699dcf99cb",
+            "label": "video",
+            "name": "video",
+            "type": "file",
+            "instructions": "Laden Sie ein Video hoch.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_size": "",
+            "max_size": "",
+            "mime_types": "mp4, webm, ogg"
+        },
+        {
+            "key": "field_5c8699f2f99cc",
+            "label": "Overlay Bild",
+            "name": "overlay_image",
+            "type": "image",
+            "instructions": "Wenn sie ei eigene Bild als Thumbnail haben möchte, können Sie dies hier auswählen. Das Bild wird anschliessend über das Video gelegt und beim Klick auf den Playbutton ausgeblendet.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "",
+    "modified": 1561978443
+}

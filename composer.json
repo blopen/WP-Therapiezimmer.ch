@@ -1,0 +1,51 @@
+{
+    "name": "cubetech/wptheme.basetheme",
+    "version": "2.0.0",
+    "description": "This is the new cubetech base theme using UIKit and a new, sturdy core library",
+    "license": "MIT",
+    "type": "wordpress-theme",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://wpackagist.org"
+        }
+    ],
+    "require": {
+        "wpackagist-plugin/akismet": "^4",
+        "wpackagist-plugin/wp-mail-smtp": "^1",
+        "wpackagist-plugin/members": "^2",
+        "wpackagist-plugin/user-switching": "^1",
+        "wpackagist-plugin/post-types-order": "^1",
+        "wpackagist-plugin/wp-piwik": "^1",
+        "wpackagist-plugin/wordpress-seo": "^12",
+        "wpackagist-plugin/classic-editor": "^1",
+        "wpackagist-plugin/query-monitor": "^3",
+        "wpackagist-plugin/disable-comments": "^1",
+        "wpackagist-plugin/safe-svg": "^1",
+        "wpackagist-plugin/acf-gravityforms-add-on": "^1"
+    },
+    "extra": {
+        "installer-paths": {
+            "../../../wp-content/plugins/{$name}/": ["type:wordpress-plugin"]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Cubetech\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Alex Scherer",
+            "email": "alex.scherer@cubetech.ch"
+        },
+        {
+            "name": "Marc Mentha",
+            "email": "marc.mentha@cubetech.ch"
+        },
+        {
+            "name": "Steeve Jeannin",
+            "email": "steeve@cubetech.ch"
+        }
+    ]
+}

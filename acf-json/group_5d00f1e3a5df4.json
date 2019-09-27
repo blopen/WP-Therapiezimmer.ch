@@ -1,0 +1,74 @@
+{
+    "key": "group_5d00f1e3a5df4",
+    "title": "Posttype: Download",
+    "fields": [
+        {
+            "key": "field_5d00f1eb86fb6",
+            "label": "Datei",
+            "name": "file",
+            "type": "file",
+            "instructions": "Laden Sie eine Datei hoch.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_size": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5d00f20086fb7",
+            "label": "Beschreibung",
+            "name": "leadtext",
+            "type": "textarea",
+            "instructions": "Geben Sie eine kurze Beschreibung zu der Datei.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "download"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content",
+        "excerpt",
+        "discussion",
+        "comments",
+        "revisions",
+        "format",
+        "page_attributes",
+        "featured_image",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1560345141
+}

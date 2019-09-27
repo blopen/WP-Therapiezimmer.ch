@@ -1,0 +1,458 @@
+{
+    "key": "group_5cfa118c00896",
+    "title": "Seitenbaukasten",
+    "fields": [
+        {
+            "key": "field_5c6a66599e107",
+            "label": "Seitenbaukasten",
+            "name": "pagebuilder",
+            "type": "flexible_content",
+            "instructions": "Seitenbaukasten\r\nStellen Sie hier den Seiteninhalt zusammen.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layouts": {
+                "5c6e88da5c76c": {
+                    "key": "5c6e88da5c76c",
+                    "name": "Text",
+                    "label": "Text",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5c6e899b421d8",
+                            "label": "Text Felder",
+                            "name": "Text_fields",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5c6e89ee22ab3"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 1
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5c8681c398640": {
+                    "key": "layout_5c8681c398640",
+                    "name": "Image",
+                    "label": "Bild",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5c8681cd98641",
+                            "label": "Bild Felder",
+                            "name": "Image_fields",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5c8680d5f0fff"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 1
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5d03431a24376": {
+                    "key": "layout_5d03431a24376",
+                    "name": "Video",
+                    "label": "Video",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5d03432824377",
+                            "label": "Video Felder",
+                            "name": "Video_fields",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5c8699b991f81"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 1
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5cbf0bb24441e": {
+                    "key": "layout_5cbf0bb24441e",
+                    "name": "NumberCards",
+                    "label": "Fakten und Zahlen",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5cbf0bb24441f",
+                            "label": "Fakten und Zahlen",
+                            "name": "NumberCards_fields",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5c8288c2a3ae4"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 1
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5cfa190d03afe": {
+                    "key": "layout_5cfa190d03afe",
+                    "name": "Accordion",
+                    "label": "Akkordeon",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5cfa193c03aff",
+                            "label": "Akkordeon Felder",
+                            "name": "Accordion_fields",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5c8a6b78b231d"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 1
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5cfa199903b00": {
+                    "key": "layout_5cfa199903b00",
+                    "name": "Table",
+                    "label": "Tabelle",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5cfa19a303b01",
+                            "label": "Tabellen Felder",
+                            "name": "Table_fields",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5c8fa0a7bbc76"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 1
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5cd925f757774": {
+                    "key": "layout_5cd925f757774",
+                    "name": "Form",
+                    "label": "Formular",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5cd925f757775",
+                            "label": "Formular Felder",
+                            "name": "Form_fields",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5cc9895eef8fb"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 1
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5d038a268e0ca": {
+                    "key": "layout_5d038a268e0ca",
+                    "name": "Map",
+                    "label": "Map",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5d038a2e8e0cb",
+                            "label": "Map Felder",
+                            "name": "Map_fields",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5caf2c9d6c753"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 1
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5cfa1b56c9ffd": {
+                    "key": "layout_5cfa1b56c9ffd",
+                    "name": "Timeline",
+                    "label": "Timeline",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5cfa1b62c9ffe",
+                            "label": "Timeline Felder",
+                            "name": "Timeline_fields",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5c90cd6b36d43"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 1
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5cf91acfff375": {
+                    "key": "layout_5cf91acfff375",
+                    "name": "Team",
+                    "label": "Team",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5cf91acfff376",
+                            "label": "Team Felder",
+                            "name": "Team_fields",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5c813279f33cb"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 1
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5cece6dc4eafc": {
+                    "key": "layout_5cece6dc4eafc",
+                    "name": "Download",
+                    "label": "Download",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5cece6dc4eafd",
+                            "label": "Download Felder",
+                            "name": "Download_fields",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5c7e55b329f45"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 1
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5d0765bc3a689": {
+                    "key": "layout_5d0765bc3a689",
+                    "name": "IconList",
+                    "label": "Liste mit Icons",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5d0765bc3a68a",
+                            "label": "Liste mit Icons",
+                            "name": "IconList_fields",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5d075a1aea633"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 1
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_5d0919bed1e38": {
+                    "key": "layout_5d0919bed1e38",
+                    "name": "Gallery",
+                    "label": "Gallery",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5d0919bed1e39",
+                            "label": "Gallery Felder",
+                            "name": "Gallery_fields",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5bfbb622739c1"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 1
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "button_label": "Seitenbaukasten Element hinzufügen",
+            "min": "",
+            "max": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content",
+        "excerpt",
+        "discussion",
+        "comments",
+        "revisions",
+        "author",
+        "format",
+        "featured_image",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ],
+    "active": 0,
+    "description": "",
+    "modified": 1561381979
+}

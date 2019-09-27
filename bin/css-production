@@ -1,0 +1,12 @@
+#!/bin/bash
+log () {
+    echo "[$(date +'%H:%M:%S')] $1"
+}
+start=$(date +%s);
+log "CSS PRODUCTION task started"
+rm -rf assets/dist/styles 2>/dev/null
+mkdir assets/dist/styles
+node-sass -q assets/src/styles/theme.scss | node_modules/clean-css-cli/bin/cleancss -O1 > assets/dist/styles/theme.min.css
+node_modules/postcss-cli/bin/postcss assets/dist/styles/theme.min.css --no-map -u autoprefixer -r
+end=$(date +%s);
+log "CSS PRODUCTION task completed in $((end-start)) seconds"

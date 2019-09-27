@@ -1,0 +1,47 @@
+.ct-component-video {
+
+  @media print {
+    display: none !important;
+  }
+
+  .uk-position-relative {
+    border-radius: 3px;
+    overflow: hidden;
+  }
+
+  .ct-video {
+    outline: 0;
+  }
+
+  .video-overlay-image,
+  .ct-transparent-overlay {
+    border-radius: 3px;
+    transition: all 200ms ease-in-out;
+  }
+
+  .video-overlay-image {
+    min-height: 100%;
+  }
+
+  .faded {
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
+  }
+
+  .ct-transparent-overlay {
+    background-color: rgba($white, .5);
+    top: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    left: 1rem;
+    cursor: pointer;
+  }
+
+  .ct-play-button {
+    @media (max-width: $breakpoint-medium-max) {
+      width: 4.5rem;
+    }
+  }
+
+}

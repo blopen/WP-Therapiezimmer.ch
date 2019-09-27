@@ -1,0 +1,90 @@
+$download-boxshadow-color: $font-color;
+$download-link-color: $primary-color;
+
+.ct-component-download {
+  margin-left: auto;
+  margin-right: auto;
+
+  .ct-component-header {
+    padding-bottom: 0.75rem;
+  }
+}
+
+.ct-card-download {
+  border-radius: 3px;
+  box-shadow: 0 1px 3px rgba($download-boxshadow-color, 0.2);
+  padding: 1.875rem;
+  margin-bottom: 1.25rem;
+
+  .ct-card-content {
+    font-size: 0.875rem;
+    line-height: 1.4375rem;
+    font-weight: 200;
+  }
+
+  .ct-card-download-extension {
+    padding-bottom: 3px;
+
+    &:before {
+      content: "";
+      background-image: url("../images/Unknown-Filetype-Icon.svg");
+      display: inline-block;
+      width: 1rem;
+      height: 1.25rem;
+      margin: 0 0.5rem 0 0;
+      vertical-align: middle;
+    }
+
+    &[data-download-icon="DMG"]:before {
+      background-image: url("../images/DMG-Icon.svg");
+    }
+
+    &[data-download-icon="DOC"]:before {
+      background-image: url("../images/DOC-Icon.svg");
+    }
+
+    &[data-download-icon="EXE"]:before {
+      background-image: url("../images/EXE-Icon.svg");
+    }
+
+    &[data-download-icon="ISO"]:before {
+      background-image: url("../images/ISO-Icon.svg");
+    }
+
+    &[data-download-icon="JPG"]:before {
+      background-image: url("../images/JPG-Icon.svg");
+    }
+
+    &[data-download-icon="MSI"]:before {
+      background-image: url("../images/MSI-Icon.svg");
+    }
+
+    &[data-download-icon="PDF"]:before {
+      background-image: url("../images/PDF-Icon.svg");
+    }
+
+    &[data-download-icon="PNG"]:before {
+      background-image: url("../images/PNG-Icon.svg");
+    }
+
+    &[data-download-icon="PPT"]:before {
+      background-image: url("../images/PPT-Icon.svg");
+    }
+
+    &[data-download-icon="XLS"]:before {
+      background-image: url("../images/XLS-Icon.svg");
+    }
+
+    &[data-download-icon="ZIP"]:before {
+      background-image: url("../images/ZIP-Icon.svg");
+    }
+  }
+
+  .ct-card-download-link {
+    color: $primary-color;
+
+    .ct-card-download-link-icon {
+      margin: 0 0.5rem 0 0;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+#!/bin/bash
+rm -rf assets/dist 2>/dev/null
+mkdir assets/dist
+npm run -s css-production
+npm run -s js-production
+npm run -s backend
+npm run -s images
+npm run -s fonts

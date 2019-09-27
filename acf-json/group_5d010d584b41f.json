@@ -1,0 +1,154 @@
+{
+    "key": "group_5d010d584b41f",
+    "title": "Posttype: Team",
+    "fields": [
+        {
+            "key": "field_5d010d61b7c72",
+            "label": "Bild",
+            "name": "image",
+            "type": "image",
+            "instructions": "Laden Sie ein Bild hoch.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5d010d7db7c73",
+            "label": "Funktion",
+            "name": "function",
+            "type": "text",
+            "instructions": "Geben Sie die Position\/Funktion des Teammitgliedes an.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5d010db9b7c74",
+            "label": "Email-Adresse",
+            "name": "email",
+            "type": "email",
+            "instructions": "Geben Sie die Email-Adresse an.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_5d010ddab7c75",
+            "label": "Telefon",
+            "name": "phone",
+            "type": "text",
+            "instructions": "Geben Sie die Geschäftsnummer des Teammitgliedes an.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5d010df4b7c76",
+            "label": "Soziale Medien",
+            "name": "social_medias",
+            "type": "repeater",
+            "instructions": "Verlinken Sie die Sozialen Medien Accounts",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_5d010e2db7c77",
+                    "label": "Link",
+                    "name": "social_media_link",
+                    "type": "url",
+                    "instructions": "Geben Sie die Url auf den Account an.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "team"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content",
+        "excerpt",
+        "discussion",
+        "comments",
+        "revisions",
+        "author",
+        "format",
+        "page_attributes",
+        "featured_image",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1560431064
+}

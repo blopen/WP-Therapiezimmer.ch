@@ -1,0 +1,86 @@
+{
+    "key": "group_5c7e55b329f45",
+    "title": "Seitenbaukasten Komponent: Download",
+    "fields": [
+        {
+            "key": "field_5c7e56e7042b1",
+            "label": "Titel",
+            "name": "title",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5c7e7f4a2c3ab",
+            "label": "Downloads",
+            "name": "downloads_repeater",
+            "type": "repeater",
+            "instructions": "Wählen Sie hier die downloads aus, welche in diesem Komponenten dargestellt werden soll. Downloads erfassen sie über das Menü Downloads links im Dashboardbalken.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 1,
+            "max": 0,
+            "layout": "block",
+            "button_label": "Download hinzufügen",
+            "sub_fields": [
+                {
+                    "key": "field_5c7e7f9f2c3ac",
+                    "label": "Downloads",
+                    "name": "downloads",
+                    "type": "post_object",
+                    "instructions": "Wählen Sie einen Download aus.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "post_type": [
+                        "download"
+                    ],
+                    "taxonomy": "",
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "return_format": "object",
+                    "ui": 1
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "",
+    "modified": 1560345166
+}

@@ -1,0 +1,105 @@
+{
+    "key": "group_5c8680d5f0fff",
+    "title": "Seitenbaukasten Komponente: Bild",
+    "fields": [
+        {
+            "key": "field_5c8680dc8e0e9",
+            "label": "Bild",
+            "name": "image",
+            "type": "image",
+            "instructions": "Wählen Sie ein Bild aus.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5c8681328e0eb",
+            "label": "Bildlegende",
+            "name": "image_description",
+            "type": "text",
+            "instructions": "Eine Kurze Bildlegende.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5c8680ff8e0ea",
+            "label": "Alternativtext",
+            "name": "alt_text_optional",
+            "type": "text",
+            "instructions": "Falls der Browser das Bild nicht laden kann wird stattdessen dieser Text angezeigt.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5c86815befacf",
+            "label": "Abstand",
+            "name": "offset",
+            "type": "true_false",
+            "instructions": "Wollen Sie ober- und unterhalb des Bildes Abstände?",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Abstände hinzufügen",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "",
+    "modified": 1561980234
+}

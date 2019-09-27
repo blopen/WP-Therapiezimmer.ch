@@ -1,0 +1,11 @@
+#!/bin/bash
+log () {
+    echo "[$(date +'%H:%M:%S')] $1"
+}
+start=$(date +%s);
+log "CSS task started"
+rm assets/dist/styles/theme.min.css 2>/dev/null
+node-sass -q assets/src/styles/theme.scss -o assets/dist/styles/ --source-map true --output-style compressed
+mv assets/dist/styles/theme.css assets/dist/styles/theme.min.css
+end=$(date +%s);
+log "CSS task completed in $((end-start)) seconds"

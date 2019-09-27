@@ -1,0 +1,12 @@
+.ct-filter {
+  border-radius: 20px;
+  border: 1px solid rgba($font-color, .2);
+
+  &:hover {
+    border-color: $medium-gray;
+  }
+
+  .uk-active & {
+    border-color: $primary-color;
+  }
+}

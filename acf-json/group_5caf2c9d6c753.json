@@ -1,0 +1,154 @@
+{
+    "key": "group_5caf2c9d6c753",
+    "title": "Seitenbaukasten Komponent: Map",
+    "fields": [
+        {
+            "key": "field_5caf2cc8f7f4a",
+            "label": "Map Titel",
+            "name": "map_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5caf2cdbf7f4b",
+            "label": "Karte Längengrad",
+            "name": "map_longitude",
+            "type": "text",
+            "instructions": "Holen Sie sich <a href=\"https:\/\/www.gps-coordinates.net\">hier<\/a> die Longitude (Längengrad) des Ortes, den Sie auf der Karte dargestellt haben möchten.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5caf2fc6846e8",
+            "label": "Karte Breitengrad",
+            "name": "map_latitude",
+            "type": "text",
+            "instructions": "Holen Sie sich <a href=\"https:\/\/www.gps-coordinates.net\">hier<\/a> die Latitude (Breitengrad) des Ortes, den Sie auf der Karte dargestellt haben möchten.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5cb5a6bd77aef",
+            "label": "Text neben der Karte?",
+            "name": "map_is_tow_column",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5cb5c533b040d",
+            "label": "Karten Ausrichtung",
+            "name": "map_alignment",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5cb5a6bd77aef",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "Links",
+            "ui_off_text": "Rechts"
+        },
+        {
+            "key": "field_5cb5a71e77af0",
+            "label": "Karten Text Editor",
+            "name": "map_text",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5cb5a6bd77aef",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "",
+    "modified": 1560513566
+}

@@ -1,0 +1,25 @@
+
+.ui-datepicker {
+  width: 18.875rem;
+  max-width: calc(100% - $global-gutter);
+  background-color: $white;
+
+  .ui-datepicker-next,
+  .ui-datepicker-prev {
+    display: none;
+  }
+
+  .ui-datepicker-title {
+    display: flex;
+    justify-content: space-between;
+
+    select {
+      width: 45%;
+    }
+  }
+
+  .ui-datepicker-calendar {
+    width: 100%;
+    margin-top: 1.25rem;
+  }
+}

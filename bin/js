@@ -1,0 +1,11 @@
+#!/bin/bash
+log () {
+    echo "[$(date +'%H:%M:%S')] $1"
+}
+start=$(date +%s);
+log "JS task started"
+rm assets/dist/scripts/main.min.js 2>/dev/null
+node_modules/jshint/bin/jshint assets/src/scripts/main.js
+browserify assets/src/scripts/main.js -t [ babelify --presets [ @babel/preset-env ] ] -o assets/dist/scripts/main.min.js
+end=$(date +%s);
+log "JS task completed in $((end-start)) seconds"

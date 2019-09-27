@@ -1,0 +1,59 @@
+h1, .uk-h1 {
+  font-size: $base-h1-font-size-m;
+  line-height: $base-h1-line-height;
+
+  @media (max-width: $breakpoint-medium-max) {
+    font-size: $base-h1-font-size;
+    line-height: $base-h1-line-height * 0.8;
+  }
+}
+
+h2, .uk-h2 {
+  font-size: $base-h2-font-size-m;
+  line-height: $base-h2-line-height;
+
+  @media (max-width: $breakpoint-medium-max) {
+    font-size: $base-h2-font-size;
+    line-height: $base-h2-line-height * 0.8;
+  }
+}
+
+h3, .uk-h3 {
+  font-size: $base-h3-font-size-m;
+  line-height: $base-h3-line-height;
+
+  @media (max-width: $breakpoint-medium-max) {
+    font-size: $base-h3-font-size;
+    line-height: $base-h3-line-height * 0.8;
+  }
+}
+
+h4, .uk-h4 {
+  font-size: $base-h4-font-size;
+  line-height: $base-h4-line-height;
+
+  @media (max-width: $breakpoint-medium-max) {
+    font-size: $base-h4-font-size * 0.8;
+    line-height: $base-h4-line-height * 0.8;
+  }
+}
+
+h5, .uk-h5 {
+  font-size: $base-h5-font-size;
+  line-height: $base-h5-line-height;
+
+  @media (max-width: $breakpoint-medium-max) {
+    font-size: $base-h5-font-size * 0.8;
+    line-height: $base-h5-line-height * 0.8;
+  }
+}
+
+h6, .uk-h6 {
+  font-size: $base-h6-font-size;
+  line-height: $base-h6-line-height;
+
+  @media (max-width: $breakpoint-medium-max) {
+    font-size: $base-h6-font-size * 0.8;
+    line-height: $base-h6-line-height * 0.8;
+  }
+}

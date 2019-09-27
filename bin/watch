@@ -1,0 +1,54 @@
+#!/bin/bash
+runTask () {
+    case $1 in
+        "scss")
+            log "run scss task"
+            npm run -s css
+            ;;
+        "js")
+            log "run js task"
+            npm run -s js
+            ;;
+        "svg" | "png" | "jpg" | "gif")
+            log "run images task"
+            npm run -s images
+            ;;
+        *)
+            log "no task for file type '$1'"
+            ;;
+    esac
+}
+
+log () {
+    echo "[$(date +'%H:%M:%S')] $1"
+}
+
+currentdate=0
+currentfullfile=""
+
+shopt -s globstar
+for fullfile in ./assets/src/**/* ./assets/src/*; do
+    if [ $(date -r "$fullfile" +%s) -gt $currentdate ]
+    then
+        currentdate=$(date -r "$fullfile" +%s)
+        currentfullfile=$fullfile
+    fi
+done
+
+
+log "start watching"
+log "select file: '$currentfullfile' $(date -d @$currentdate +'%Y-%m-%d %H:%M:%S')"
+
+while true; do
+    for fullfile in ./assets/src/**/* ./assets/src/*; do
+        lastchange=$(date -r "$fullfile" +%s || echo "pls" && exit)
+        if [ $lastchange -gt $currentdate ]
+        then
+            log "file change: '$fullfile' "
+            filename=${fullfile##*/}
+            runTask ${filename##*.}
+            currentdate=$(date -r $fullfile +%s)
+        fi
+    done
+    sleep 1
+done

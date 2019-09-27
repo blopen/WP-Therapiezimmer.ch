@@ -1,0 +1,44 @@
+{
+  "name": "wptheme.basetheme",
+  "version": "1.7.0",
+  "author": "cubetech <info@cubetech.ch>",
+  "homepage": "https://github.com/cubetech/wptheme.basetheme",
+  "private": true,
+  "engines": {
+    "node": ">= 6.0.0",
+    "npm": ">= 3.10.0"
+  },
+  "scripts": {
+    "css": "./bin/css",
+    "css-production": "./bin/css-production",
+    "js": "./bin/js",
+    "js-production": "./bin/js-production",
+    "backend": "./bin/backend",
+    "images": "./bin/images",
+    "fonts": "./bin/fonts",
+    "watch": "./bin/watch",
+    "production": "./bin/production"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "autoprefixer": "^9.6.0",
+    "babel-cli": "^6.26.0",
+    "babelify": "^10.0.0",
+    "browserify": "^16.2.3",
+    "clean-css-cli": "^4.3.0",
+    "concurrently": "^4.1.0",
+    "imagemin-cli": "^4.0.1",
+    "jquery": "^3.4.1",
+    "jshint": "^2.10.2",
+    "node-sass": "^4.12.0",
+    "nodemon": "^1.19.1",
+    "postcss-cli": "^6.1.2",
+    "terser": "^4.0.0",
+    "uikit": "^3.1.5"
+  },
+  "dependencies": {
+    "mapbox-gl": "^1.0.0",
+    "terser": "^4.3.1"
+  }
+}

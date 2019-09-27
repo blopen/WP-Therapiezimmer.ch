@@ -1,0 +1,137 @@
+/*old*/
+.ct-component-timeline .ct-component-timeline-leadtext {
+    padding-bottom: 6rem;
+  }
+  .ct-component-timeline .ct-component-timeline-start {
+    color: green;
+    margin-top: 2.75rem;
+    margin-bottom: -1rem;
+    width: 9.3125rem;
+    height: 9.3125rem;
+  }
+  .ct-component-timeline .ct-component-timeline-start .circle-1 {
+    background-color: rgba(0, 128, 0, 0.33333333333333) !important;
+    width: 9.3125rem;
+    height: 9.3125rem;
+  }
+  .ct-component-timeline .ct-component-timeline-start .circle-2 {
+    background-color: rgba(0, 128, 0, 0.66666666666667) !important;
+    width: 7.4rem;
+    height: 7.4rem;
+  }
+  .ct-component-timeline .ct-component-timeline-start .circle-3 {
+    background-color: rgba(0, 128, 0, 1) !important;
+    width: 5.5rem;
+    height: 5.5rem;
+  }
+  @media (max-width: 600px) {
+    .ct-component-timeline .ct-component-timeline-start {
+      margin-left: 0;
+    }
+  }
+  .ct-component-timeline .uk-grid-divider > :not(.uk-first-column)::before {
+    border: 1px solid green;
+  }
+  @media print {
+    .ct-component-timeline .uk-grid-divider > :not(.uk-first-column)::before {
+      display: none !important;
+    }
+  }
+  .ct-component-timeline .ct-component-content {
+    /* Suppress the "uk-grid-divider" for too small screen */
+  }
+  @media (min-width: 600px) {
+    .ct-component-timeline .ct-component-content .ct-card-timeline :first-child::before {
+      content: "";
+      position: absolute;
+      height: 0px;
+      border: 1px solid rgba(0, 0, 0, 0.06);
+      top: 50%;
+    }
+    .ct-component-timeline .ct-component-content :nth-child(odd) .ct-card-timeline {
+      margin-left: 0;
+      margin-bottom: -5rem;
+      transform: translate(0%, -50%);
+    }
+    .ct-component-timeline .ct-component-content :nth-child(odd) .ct-card-timeline :first-child::before {
+      width: 6.5rem;
+      left: 100%;
+    }
+    .ct-component-timeline .ct-component-content :nth-child(even) .ct-card-timeline {
+      margin-right: 0;
+    }
+    .ct-component-timeline .ct-component-content :nth-child(even) .ct-card-timeline :first-child::before {
+      width: 6.25rem;
+      right: 100%;
+    }
+  }
+  @media (max-width: 600px) {
+    .ct-component-timeline .ct-component-content {
+      border-left: 2px solid green;
+      padding-bottom: 2.875rem;
+      margin-left: calc(calc(9.3125rem / 2) - 0.5px);
+    }
+    .ct-component-timeline .ct-component-content .ct-card-timeline {
+      margin-right: 0;
+    }
+    .ct-component-timeline .ct-component-content .ct-card-timeline :first-child::before {
+      content: "";
+      position: absolute;
+      height: 0px;
+      border: 1px solid rgba(0, 0, 0, 0.06);
+      top: 50%;
+      width: 1.625rem;
+      right: 100%;
+    }
+  }
+  .ct-component-timeline .ct-component-content.uk-grid-divider.uk-grid-stack > .uk-grid-margin::before {
+    display: none;
+  }
+  .ct-component-timeline .ct-component-timeline-end {
+    background-color: green !important;
+    width: 1.1875rem;
+    height: 1.1875rem;
+  }
+  @media (max-width: 600px) {
+    .ct-component-timeline .ct-component-timeline-end {
+      margin-left: calc((9.3125rem - 1.1875rem) / 2);
+    }
+  }
+  .ct-card-timeline {
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    padding: 0 2.25rem;
+    margin: 3rem 4rem;
+  }
+  @media (max-width: 600px) {
+    .ct-card-timeline {
+      margin-left: -2rem;
+      margin-right: 0;
+    }
+  }
+  @media print {
+    .ct-card-timeline {
+      border: 1px solid rgba(0, 0, 0, 0.06);
+    }
+  }
+  .ct-card-timeline .ct-card-header {
+    padding: 1.25rem 0;
+  }
+  .ct-card-timeline .ct-card-timeline-year {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    color: green;
+    margin-bottom: 0.2rem;
+  }
+  .ct-card-timeline .ct-card-timeline-title {
+    font-size: 1.375rem;
+    line-height: 1.875rem;
+    color: green;
+  }
+  .ct-card-timeline .ct-card-timeline-description {
+    font-size: 0.875rem;
+    line-height: 1.3125rem;
+    color: green;
+    padding-bottom: 2rem;
+  }
+  /*old*/

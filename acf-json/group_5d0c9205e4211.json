@@ -1,0 +1,77 @@
+{
+    "key": "group_5d0c9205e4211",
+    "title": "Posttype: Termine",
+    "fields": [
+        {
+            "key": "field_5d0c921388c62",
+            "label": "Start Datum\/Zeit",
+            "name": "start_date",
+            "type": "date_time_picker",
+            "instructions": "Das Datum und die Uhrzeit an dem der Termin stattfindet.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "d.m.Y H:i",
+            "return_format": "U",
+            "first_day": 1
+        },
+        {
+            "key": "field_5d0c926188c63",
+            "label": "End Datum\/Zeit",
+            "name": "end_date",
+            "type": "date_time_picker",
+            "instructions": "Geben Sie an, wann der Termin endet.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "d.m.Y H:i",
+            "return_format": "U",
+            "first_day": 1
+        },
+        {
+            "key": "field_5d0c929688c64",
+            "label": "Veranstaltungsort",
+            "name": "location",
+            "type": "text",
+            "instructions": "Geben Sie an, wo der Termin stattfindet.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "event"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1561105804
+}

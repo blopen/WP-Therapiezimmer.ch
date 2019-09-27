@@ -1,0 +1,428 @@
+{
+    "key": "group_5bfbb622739c1",
+    "title": "Seitenbaukasten Komponent: Gallery",
+    "fields": [
+        {
+            "key": "field_5d0916e6e4754",
+            "label": "Titel",
+            "name": "gallery_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5c0a280a93b8a",
+            "label": "Bildergalerie mit Links?",
+            "name": "image_with_link",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5bfbc8bb28cc3",
+            "label": "Bilder",
+            "name": "gallery_repeater",
+            "type": "repeater",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5c0a280a93b8a",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 1,
+            "max": 0,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_5bfbc8d928cc4",
+                    "label": "Bild",
+                    "name": "image",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "thumbnail",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_5bfbc8e628cc5",
+                    "label": "Link",
+                    "name": "link",
+                    "type": "link",
+                    "instructions": "Der Link-Text wird angezeigt, wenn der Mauszeiger über dem Bild liegt",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5c0a280a93b8a",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array"
+                }
+            ]
+        },
+        {
+            "key": "field_5d0df7cb1c52a",
+            "label": "Bilder",
+            "name": "gallery_images",
+            "type": "gallery",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5c0a280a93b8a",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "insert": "append",
+            "library": "all",
+            "min": "",
+            "max": "",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5c66a27d38890",
+            "label": "Filter",
+            "name": "filter",
+            "type": "true_false",
+            "instructions": "Möchten Sie spezifischen Filter verwenden?",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5ccb21d3fe226",
+            "label": "Mit Lightbox",
+            "name": "with_light_box",
+            "type": "true_false",
+            "instructions": "Willst du die Bilder in einer Lightbox öffnen können?",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5c66a27d38890",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_5c0a280a93b8a",
+                        "operator": "!=",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5d09142eb1e1a",
+            "label": "Container",
+            "name": "ct_container",
+            "type": "radio",
+            "instructions": "Wähle deinen gewünschten Container aus.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5c66a27d38890",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "uk-container": "Standard",
+                "uk-container uk-container-small": "Small",
+                "uk-container uk-container-large": "Large",
+                "uk-container-expand": "Expand"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "uk-container : Standard",
+            "layout": "horizontal",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_5c0add9a8a0ad",
+            "label": "Grid Child Width",
+            "name": "ct_grid_child_width",
+            "type": "radio",
+            "instructions": "Wählen Sie zwischen 2er, 3er, 4er und 6er Grid. Dies definiert lediglich das Startverhalten und hat anschliessend automatische Umbrüche für Desktop und Mobile.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5c66a27d38890",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "uk-child-width-1-2@s": "2er",
+                "uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-3@l": "3er",
+                "uk-child-width-1-3@s uk-child-width-1-4@m uk-child-width-1-4@l": "4er Standard",
+                "uk-child-width-1-3@s uk-child-width-1-5@m uk-child-width-1-6@l": "6er"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "uk-child-width-1-3@s uk-child-width-1-4@m uk-child-width-1-4@l : 4er Standard",
+            "layout": "horizontal",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_5c84eb5c5f335",
+            "label": "Beginn der Auflistung",
+            "name": "centered_image",
+            "type": "radio",
+            "instructions": "Wählen sie zwischen Links, mittig, rechts",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5c66a27d38890",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "uk-flex-left": "links",
+                "uk-flex-center": "mitte",
+                "uk-flex-right": "rechts"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "uk-flex-left : links",
+            "layout": "horizontal",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_5c0d0550546d2",
+            "label": "Grid Gutter",
+            "name": "grid_gutter",
+            "type": "radio",
+            "instructions": "Wählen Sie schmal, medium, large oder collapse",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5c66a27d38890",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "uk-grid-small": "Small",
+                "uk-grid-medium": "Medium",
+                "uk-grid-large": "Large",
+                "uk-grid-collapse": "Collapse"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "uk-grid-medium : Medium",
+            "layout": "horizontal",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_5d091821e4755",
+            "label": "Grid Gutter spezial",
+            "name": "grid_gutter_special",
+            "type": "radio",
+            "instructions": "Wählen Sie zwischen einem Mansory und einem Parralax Grid.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5c66a27d38890",
+                        "operator": "==",
+                        "value": "1"
+                    },
+                    {
+                        "field": "field_5c0d0550546d2",
+                        "operator": "!=empty"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "none": "Ohne",
+                "masonry": "Masonry"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "none : Ohne",
+            "layout": "horizontal",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_5c0ada2a046b0",
+            "label": "Overlay für Hover link transparent oder farbig",
+            "name": "overlay_colored_transparent",
+            "type": "radio",
+            "instructions": "Wählen Sie welchen Hintergrundfarbe die Links haben sollen.",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5c66a27d38890",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "uk-overlay-default": "Standard",
+                "ct-overlay-transparent": "Halbtransparent",
+                "uk-light ct-overlay-color": "Farbig (Primary)"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "uk-overlay-default : Standard",
+            "layout": "horizontal",
+            "return_format": "value",
+            "save_other_choice": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 1,
+    "position": "acf_after_title",
+    "style": "seamless",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "",
+    "modified": 1561381857
+}

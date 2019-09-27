@@ -1,0 +1,62 @@
+{
+    "key": "group_5c7500ea26e50",
+    "title": "Seitenelement: Seiteninformationen",
+    "fields": [
+        {
+            "key": "field_5c75012751e16",
+            "label": "Optionaler Titel",
+            "name": "optional_page_title",
+            "type": "text",
+            "instructions": "Falls Sie den Titel der Seite selber bestimmen möchten können Sie dies hier tun. Wenn dieses Feld leer ist wird automatisch der Seitentiel verwendet.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5c7500fd51e15",
+            "label": "Leadtext",
+            "name": "page_lead",
+            "type": "textarea",
+            "instructions": "Geben Sie hier eine kurze Beschreibung der Seite.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "",
+    "modified": 1559899458
+}

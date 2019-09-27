@@ -1,0 +1,146 @@
+//colors
+
+$primary-color: #d65a31;
+$secondary-color: #ff6768;
+
+$font-color: #222831;
+$heading-color: #263859;
+
+$light-gray: #cacaca;
+$medium-gray: #E7ECF2;
+$dark-gray: #8a8a8a;
+$black: #0a0a0a;
+$white: #fff;
+$background-gray: #F2F5F8;
+
+
+// UIkit colors
+
+$global-color: $font-color;
+$global-emphasis-color: $font-color;
+$global-muted-color: $white;
+$global-link-color: $primary-color;
+$global-link-hover-color: rgba($secondary-color, .6);
+$global-inverse-color: $white;
+
+// Buttons
+
+$button-line-height: 3.25rem;
+$button-font-size: 1.065rem;
+$button-text-transform: none;
+
+// Links
+
+$base-link-color: $primary-color;
+$base-link-text-decoration: none;
+$base-link-hover-color: rgba($secondary-color, .6);
+$base-link-hover-text-decoration: none;
+
+// Font
+
+// ######################################################
+// Never change this because of the rem calculation fails
+$base-body-font-size: 16px;
+// ######################################################
+
+$global-font-family: 'Univers', Arial, sans-serif;
+$body-font-color: $font-color;
+$global-font-size: 1.1875rem;
+
+// Headings
+
+$base-heading-color: $heading-color;
+$base-heading-font-weight: normal;
+
+$base-h1-font-size-m: 3rem;
+$base-h1-font-size: 2rem;
+$base-h1-line-height: 3.75rem;
+
+$base-h2-font-size-m: 2rem;
+$base-h2-font-size: 1.875rem;
+$base-h2-line-height: 2rem;
+
+$base-h3-font-size-m: 1.875rem;
+$base-h3-font-size: 1.6rem;
+$base-h3-line-height: 2rem;
+
+$base-h4-font-size-m: 1.4rem;
+$base-h4-font-size: 1.2rem;
+$base-h4-line-height: 1.6rem;
+
+$base-h5-font-size: 1rem;
+$base-h5-line-height: 1.2rem;
+
+$base-h6-font-size: 0.675rem;
+$base-h6-line-height: 1rem;
+
+// Backgrounds
+
+$global-background: $white;
+
+$global-muted-background: #f8f8f8;
+$global-primary-background: $primary-color;
+$global-secondary-background: $secondary-color;
+
+$global-success-background: #32d296;
+$global-warning-background: #faa05a;
+$global-danger-background: #D0021B;
+
+//Border
+$global-border: #e5e5e5;
+
+//Navigation
+
+$navbar-background: transparent;
+$navbar-nav-item-height: 5rem;
+$navbar-nav-item-padding-horizontal: 1rem;
+$navbar-nav-item-font-size: 1rem;
+$navbar-nav-item-color: $heading-color;
+$navbar-nav-item-hover-color: $dark-gray;
+$navbar-nav-item-onclick-color: $global-emphasis-color;
+$navbar-nav-item-active-color: $primary-color;
+
+$navbar-item-color: $black;
+
+$navbar-toggle-color: $font-color;
+$navbar-toggle-hover-color: $global-color;
+
+$navbar-dropdown-nav-item-color: $dark-gray;
+$navbar-dropdown-nav-item-hover-color: $dark-gray;
+$navbar-dropdown-nav-item-active-color: $global-emphasis-color;
+$navbar-dropdown-nav-header-color: $global-emphasis-color;
+$navbar-dropdown-nav-divider-border: $global-border;
+$navbar-dropdown-nav-sublist-item-color: $font-color;
+$navbar-dropdown-nav-sublist-item-hover-color: $global-color;
+$navbar-dropdown-nav-sublist-item-active-color: $global-emphasis-color;
+
+$navbar-dropbar-background: $white;
+
+// Nav
+$nav-header-font-size: 1.25rem;
+$nav-primary-item-active-color: $primary-color;
+$nav-primary-item-hover-color: $dark-gray;
+$nav-primary-item-color: $primary-color;
+$nav-primary-item-font-size: 1.25rem;
+$nav-primary-sublist-item-color: $font-color;
+$nav-primary-sublist-item-hover-color: $font-color;
+$nav-primary-sublist-item-active-color: $primary-color;
+
+// Modal 
+
+$modal-background: $white;
+$modal-padding-vertical: 5rem;
+$modal-padding-vertical-s: 5rem;
+$modal-padding-horizontal: 0;
+$modal-padding-horizontal-s: 0;
+
+$close-color: $black;
+$close-hover-color: $black;
+
+// Accoridon
+
+$accordion-title-font-size: 1.25rem;
+
+// Search
+
+$search-placeholder-color: $font-color;

@@ -1,0 +1,13 @@
+#!/bin/bash
+log () {
+    echo "[$(date +'%H:%M:%S')] $1"
+}
+start=$(date +%s);
+log "JS PRODUCTION task started"
+rm -rf assets/dist/scripts 2>/dev/null
+mkdir assets/dist/scripts
+node_modules/jshint/bin/jshint assets/src/scripts/main.js
+browserify assets/src/scripts/main.js -t [ babelify --presets [ @babel/preset-env ] ] -o assets/dist/scripts/production_tmp.js
+node_modules/terser/bin/terser -c -- assets/dist/scripts/production_tmp.js > assets/dist/scripts/main.min.js
+end=$(date +%s);
+log "JS PRODUCTION task completed in $((end-start)) seconds"

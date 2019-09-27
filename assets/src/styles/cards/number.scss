@@ -1,0 +1,27 @@
+$numbers-boxshadow-color: $font-color;
+
+.ct-card-numbers {
+  border-radius: 3px;
+  box-shadow: 0 1px 3px rgba($numbers-boxshadow-color, 0.2);
+  padding: 1.875rem;
+  margin-bottom: 1.25rem;
+
+  .ct-card-numbers-title {
+    font-size: 1.875rem;
+  }
+
+  .ct-card-numbers-divider {
+    height: 2rem;
+    color: rgba($primary-color, 0.5);
+
+    .inner-divider {
+      color: $primary-color;
+    }
+  }
+
+  .ct-card-content {
+    font-size: 0.875rem;
+    line-height: 1.4375rem;
+    font-weight: 200;
+  }
+}

@@ -1,0 +1,38 @@
+/**
+ * Map component style for pagebuilder
+ *
+ * @author Nelson Lopez <nelson.lopez@cubetech.ch>
+ * @version 1.0.0
+ * @since 1.0.0
+ */
+.ct-component-map {
+  .mapboxgl-map {
+    height: 40vh;
+    overflow: hidden;
+  }
+
+  .mapboxgl-canvas {
+    outline: none;
+  }
+
+  .marker {
+    z-index: 0;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    color: $primary-color;
+
+    /**
+      Comment in following css to use a
+      background-image instead of an uk-icon
+
+      Don't forget to change the setAttribute line at
+      the end of the assets/src/scripts/ct-map.js
+
+      Adujst the color of the ap-icon or the whole svg inside assets/src/map-icon.svg
+    */
+    // background-image: url('../images/map-icon.svg');
+    // background-size: auto;
+    // background-repeat: no-repeat;
+  }
+}
