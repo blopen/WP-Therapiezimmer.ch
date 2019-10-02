@@ -185,8 +185,9 @@ class Navigation implements \Serializable
 
         $id = intval(get_queried_object_id());
         foreach ($this->menuItems as &$item) {
-            var_dump($item->objectId, $id, '--');
-            die();
+            //crashpoint of multi level nav
+            //var_dump($item->objectId, $id, '--');
+            //die();
             if ($item->objectId === $id) {
                 $item->addClass('uk-active');
                 $item->addClass('active');
