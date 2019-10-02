@@ -1,7 +1,7 @@
 <?php
 /**
- * Basic template for the presentation of a Team component
- * The title property and at least one team of this component
+ * Basic template for the presentation of a Crew component
+ * The title property and at least one Crew of this component
  * getting validated inside the component's isValid method and therefore
  * no more validation is needed here
  *
@@ -9,7 +9,7 @@
  * @since 1.0.0
  */
 ?>
-<div class="ct-component ct-component-team uk-background-transparent uk-section<?php echo $this->index === 0 ? ' first-component' : ''; ?>">
+<div class="ct-component ct-component-crew uk-background-transparent uk-section<?php echo $this->index === 0 ? ' first-component' : ''; ?>">
     <header class="ct-component-header <?php echo $this->containerClass; ?>">
         <h2 class="ct-component-title"><?php echo $this->title; ?></h2>
     </header>
