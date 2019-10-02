@@ -3,7 +3,7 @@
 namespace Cubetech\Cards;
 
 /**
- * Class for an team card handling
+ * Class for an Crew card handling
  *
  * @author Steeve Jeannin <steeve@cubetech.ch>
  * @since 0.0.1
