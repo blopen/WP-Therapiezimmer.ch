@@ -1,9 +1,6 @@
 <?php
-
 namespace Cubetech\Base;
-
 use \Cubetech\Base\Media;
-
 /**
  * Represents a Navigation
  *
@@ -99,7 +96,7 @@ class Navigation implements \Serializable
         }
         
         $parents = $this->getParents($menuItems);
-
+        
         foreach ($parents as $parent) {
             $parent->getChilds($menuItems);
         }
@@ -116,78 +113,15 @@ class Navigation implements \Serializable
      * @since 1.0.0
      * @version 1.0.0
      */
-    private function addActiveClasses()
+    public function addActiveClasses()
     {
-
-        $id = intval(get_queried_object_id());
-
-        foreach ($this->menuItems as &$item) {
-            if ($item->objectId === $id) {
-                $item->addClass('uk-active');
-                $item->addClass('active');
-            }
-            
-            if ($item->hasChildren) {
-                $found = $this->addClasses($item->children);
-                if ($found) {
-                    $item->addClass('uk-parent');
-                    $item->addClass('uk-active');
-                    $item->addClass('active-parent');
-                }
-            }
+        
+        if (count($this->menuItems) < 1 || !$this->menuItems) {
+            return;
         }
-    }
-
-
-    /**
-     * prints a navigation recursivley with the
-     * abillity to set a max depth
-     *
-     * @param integer $maxDepth
-     * @return void
-     * 
-     * @author Marc Mentha <marc@cubetech.ch>
-     * @since 1.1.0
-     * @version 1.0.0
-     */
-    public function printRecursiveNavigation(int $maxDepth)
-    {
-        $this->addActiveClasses();
-
-        if (wp_is_mobile() === false) {
-            echo '<nav class="uk-navbar-container tz-navbar" data-uk-navbar>';
-            echo '<div class="uk-navbar">';
-            $this->printItems($this->menuItems, $maxDepth, 1);
-            echo '</div>';
-            echo '</nav>';
-        } else {
-            echo '<nav class="uk-navbar-container tz-navbar-mobile" data-uk-navbar>';
-            echo '<div class="uk-navbar">';
-            $this->printItems($this->menuItems, $maxDepth, 1);
-            echo '</div>';
-            echo '<div class="tz-burger"><span></span><span></span><span></span></div>';
-            echo '</nav>';
-        }
-    }
-
-    /**
-     * Add css classes to style the fifferent items
-     *
-     * @param array <MenuItems>
-     * @return void
-     *
-     * @author Marc Mentha <marc@cubetech.ch>
-     * @since 1.1.0
-     * @version 1.0.0
-     */
-    public function addClasses(&$menuItems)
-    {
-
-        $id = intval(get_queried_object_id());
+        
+        $id = intval(get_the_id());
         foreach ($this->menuItems as &$item) {
-            //crashpoint of multi level nav
-            //var_dump($item->objectId, $id, '--');
-            //die();
             if ($item->objectId === $id) {
                 $item->addClass('uk-active');
                 $item->addClass('active');
@@ -205,8 +139,69 @@ class Navigation implements \Serializable
     }
     
     /**
-
-
+     * Add css classes to style the fifferent items
+     *
+     * @param array <MenuItems>
+     * @return void
+     *
+     * @author Marc Mentha <marc@cubetech.ch>
+     * @since 1.1.0
+     * @version 1.0.0
+     */
+    public function addClasses(&$menuItems)
+    {
+        
+        if (count($this->menuItems) < 1 || !$this->menuItems) {
+            return;
+        }
+        
+        $id = intval(get_the_id());
+        foreach ($menuItems as $item) {
+            if ($item->objectId === $id) {
+                $item->addClass('uk-active');
+                $item->addClass('active');
+                return true;
+            }
+            
+            if ($item->hasChildren) {
+                $found = $this->addClasses($item->children);
+                if ($found) {
+                    $item->addClass('uk-parent');
+                    $item->addClass('uk-active');
+                    $item->addClass('active-parent');
+                }
+            }
+        }
+    }
+    
+    /**
+     * prints a navigation recursivley with the
+     * abillity to set a max depth
+     *
+     * @param integer $maxDepth
+     * @return void
+     *
+     * @author Marc Mentha <marc@cubetech.ch>
+     * @since 1.1.0
+     * @version 1.0.0
+     */
+    public function printRecursiveNavigation(int $maxDepth)
+    {
+        echo '<nav class="uk-navbar-container" data-uk-navbar>';
+        echo '<div class="uk-navbar">';
+        
+        if (is_array($this->menuItems)) {
+            $this->printItems($this->menuItems, $maxDepth, 1);
+        }
+        else {
+            echo '<p class="uk-text-center uk-text-danger">No Navigation found</p>';
+        }
+        
+        echo '</div>';
+        echo '</nav>';
+    }
+    
+    /**
      * Print all given items
      *
      * If one of the items has children this method
@@ -224,14 +219,16 @@ class Navigation implements \Serializable
         if ($currentLevel > $maxDepth) {
             return;
         }
-
-        if ($currentLevel === 1) {
-            $this->printLogo();
+        $class = '';
+        if ($currentLevel > 1) {
+            $class = 'uk-navbar-dropdown ct-menu-dropdown uk-dropdown';
         }
-        echo '<ul class="uk-navbar-nav">';
+        else {
+            $class = 'uk-navbar-nav';
+        }
+        echo '<ul class="' . $class . '">';
         foreach ($items as $item) {
-            echo '<li class="ct-menu-item tz-nav-item">';
-
+            echo '<li class="ct-menu-item">';
             echo '<a class="ct-menu-link ' . $item->getCssClasses() . '" href="' . $item->url . '">' . $item->title . '</a>';
             if ($item->hasChildren) {
                 $this->printItems($item->children, $maxDepth, $currentLevel + 1);
