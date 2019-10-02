@@ -1,6 +1,6 @@
 {
     "key": "group_5c813279f33cb",
-    "title": "Seitenbaukasten Komponent: Team",
+    "title": "Seitenbaukasten Komponent: Crew",
     "fields": [
         {
             "key": "field_5c81328251512",
@@ -23,8 +23,8 @@
         },
         {
             "key": "field_5c81329051513",
-            "label": "Team",
-            "name": "teams_repeater",
+            "label": "Crew",
+            "name": "crew_repeater",
             "type": "repeater",
             "instructions": "",
             "required": 0,
@@ -42,8 +42,8 @@
             "sub_fields": [
                 {
                     "key": "field_5c8132b251514",
-                    "label": "Team",
-                    "name": "teams",
+                    "label": "Crews",
+                    "name": "crews",
                     "type": "post_object",
                     "instructions": "Wählen Sie einen Teammitglied aus.",
                     "required": 0,
@@ -53,9 +53,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "post_type": [
-                        "team"
-                    ],
+                    "post_type": "",
                     "taxonomy": "",
                     "allow_null": 0,
                     "multiple": 0,
@@ -82,5 +80,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1560349875
+    "modified": 1570009535
 }

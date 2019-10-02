@@ -107,7 +107,7 @@ class Dashboard implements IPackage
 							<strong>Nelson V. Lopez (Nelson)</strong><br>
 							Handy: +41 79 102 59 55 (keine Supportanfragen)<br>
 							Mail: <a href="mailto:christoph.ackermann@cubetech.ch">nelson.lopez@cubetech.ch</a><br><br>
-							<a class="button" href="https://www.cubetech.ch/cubetech/team/christoph-s-ackermann" target="_blank">Nelson
+							<a class="button" href="https://www.cubetech.ch/cubetech/team/nelson-lopez/" target="_blank">Nelson
 																																																									 auf
 																																																									 der
 																																																									 Website

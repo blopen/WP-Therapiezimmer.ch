@@ -17,7 +17,7 @@ class PosttypeController extends ABaseController
      * @var array
      */
     private const POSTTYPES = [
-        \Cubetech\Posttypes\TeamPosttype::class,
+        \Cubetech\Posttypes\CrewPosttype::class,
         \Cubetech\Posttypes\DownloadPosttype::class,
         \Cubetech\Posttypes\EventPosttype::class,
     ];

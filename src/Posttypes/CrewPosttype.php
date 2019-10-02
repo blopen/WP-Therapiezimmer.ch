@@ -3,13 +3,13 @@
 namespace Cubetech\Posttypes;
 
 /**
- * Adds the custom posttype "team" to WordPress
+ * Adds the custom posttype "Crew" to WordPress
  *
  * @author Marc Mentha <marc@cubetech.ch>
  * @since 1.0.0
  * @version 1.0.0
  */
-class TeamPosttype extends APosttype
+class CrewPosttype extends APosttype
 {
     /**
      * Adds all actions for this posttype
@@ -36,7 +36,7 @@ class TeamPosttype extends APosttype
      */
     public static function getType()
     {
-        return 'team';
+        return 'Crew';
     }
     
     /**
@@ -51,19 +51,19 @@ class TeamPosttype extends APosttype
     public static function getLabels()
     {
         return [
-            'name'               => _x('Team', 'General name', 'wptheme-basetheme'),
-            'singular_name'      => _x('Teammitglied', 'Singular name', 'wptheme-basetheme'),
-            'menu_name'          => _x('Team', 'Menu name', 'wptheme-basetheme'),
-            'parent_item_colon'  => _x('Übergeordnetes Teammitglied', 'Parent item with colon', 'wptheme-basetheme'),
-            'all_items'          => _x('Alle Teammitglieder anzeigen', 'All items', 'wptheme-basetheme'),
-            'view_item'          => _x('Teammitglied anzeigen', 'View item', 'wptheme-basetheme'),
-            'add_new_item'       => _x('Teammitglied hinzufügen', 'Add new item', 'wptheme-basetheme'),
+            'name'               => _x('Crew', 'General name', 'wptheme-basetheme'),
+            'singular_name'      => _x('Crewmitglied', 'Singular name', 'wptheme-basetheme'),
+            'menu_name'          => _x('Crew', 'Menu name', 'wptheme-basetheme'),
+            'parent_item_colon'  => _x('Übergeordnetes Crewmitglied', 'Parent item with colon', 'wptheme-basetheme'),
+            'all_items'          => _x('Alle Crewmitglieder anzeigen', 'All items', 'wptheme-basetheme'),
+            'view_item'          => _x('Crewmitglied anzeigen', 'View item', 'wptheme-basetheme'),
+            'add_new_item'       => _x('Crewmitglied hinzufügen', 'Add new item', 'wptheme-basetheme'),
             'add_new'            => _x('mitglied hinzufügen', 'Add new', 'wptheme-basetheme'),
-            'edit_item'          => _x('Teammitglied bearbeiten', 'Edit item', 'wptheme-basetheme'),
-            'update_item'        => _x('Teammitglied aktualisieren', 'Update item', 'wptheme-basetheme'),
-            'search_items'       => _x('Teammitglied suchen', 'Search items', 'wptheme-basetheme'),
-            'not_found'          => _x('Keine Teammitglied gefunden.', 'Not found', 'wptheme-basetheme'),
-            'not_found_in_trash' => _x('Keine Teammitglied im Papierkorb gefunden.', 'Not found in trash', 'wptheme-basetheme'),
+            'edit_item'          => _x('Crewmitglied bearbeiten', 'Edit item', 'wptheme-basetheme'),
+            'update_item'        => _x('Crewmitglied aktualisieren', 'Update item', 'wptheme-basetheme'),
+            'search_items'       => _x('Crewmitglied suchen', 'Search items', 'wptheme-basetheme'),
+            'not_found'          => _x('Keine Crewmitglied gefunden.', 'Not found', 'wptheme-basetheme'),
+            'not_found_in_trash' => _x('Keine Crewmitglied im Papierkorb gefunden.', 'Not found in trash', 'wptheme-basetheme'),
         ];
     }
     
@@ -80,7 +80,7 @@ class TeamPosttype extends APosttype
     {
         return [
             'labels'              => self::getLabels(),
-            'description'         => _x('Teammitglieder Informationen', 'Description', 'wptheme-basetheme'),
+            'description'         => _x('Crewmitglieder Informationen', 'Description', 'wptheme-basetheme'),
             'supports'            => [
                 'title',
                 'editor',
