@@ -6,7 +6,7 @@ window.mapboxgl = require('mapbox-gl');
 require('./ct-helper');
 require('./ct-404');
 require('./ct-video');
-require('./ct-map');
+require('./map');
 
 (function ($) {
     $(document).ready(function () {
