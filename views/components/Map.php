@@ -17,7 +17,7 @@
         </header>
     <?php endif; ?>
     <div class="ct-component-content <?php echo $this->containerClass; ?>">
-        <div class="uk-grid ct-component-content <?php echo ($this->isTwoColumn ? 'uk-child-width-1-2@l' : 'uk-child-width-1-1@l'); ?>" data-uk-grid>
+        <div class="uk-grid ct-component-content tz-component-map  <?php echo ($this->isTwoColumn ? 'uk-child-width-1-2@l' : 'uk-child-width-1-1@l'); ?>" data-uk-grid>
             <?php if ($this->mapAlignment) : ?>
                 <div>
                     <div calss="map" style="height: 400px;

@@ -15,13 +15,14 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.6/css/uikit.min.css" />
 <!-- Own openlayer -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.0.0/css/ol.css" type="text/css">
-    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.0.0/build/ol.js"></script>
-    <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList"></script>
-    <!-- Own CSS -->
+<script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.0.0/build/ol.js"></script>
+<script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList"></script>
+<!-- Own CSS -->
 <link rel="stylesheet" href="https://www.therapiezimmer.ch/wp-content/themes/wptheme.therapiezimmer.ch/assets/src/styles/base/global.css" />
 <link rel="stylesheet" href="https://www.therapiezimmer.ch/wp-content/themes/wptheme.therapiezimmer.ch/assets/src/styles/cards/cards.css" />
 <link rel="stylesheet" href="https://www.therapiezimmer.ch/wp-content/themes/wptheme.therapiezimmer.ch/assets/src/styles/components/timeline.css" />
 <link rel="stylesheet" href="https://www.therapiezimmer.ch/wp-content/themes/wptheme.therapiezimmer.ch/assets/src/styles/components/navigation.css" />
+<link rel="stylesheet" href="https://www.therapiezimmer.ch/wp-content/themes/wptheme.therapiezimmer.ch/assets/src/styles/components/map.css" />
 <link rel="stylesheet" href="https://www.therapiezimmer.ch/wp-content/themes/wptheme.therapiezimmer.ch/assets/src/styles/theme.css" />
 
 <!-- UIkit JS -->

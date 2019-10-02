@@ -1,6 +1,5 @@
 (function ($) {
     $(document).ready(function () {
-        console.log('99');
         var once = true;
         $(window).on('load scroll', function () {
             if ($('[data-map]').isInViewport(500) && once) {
@@ -8,7 +7,7 @@
                 once = false;
             }
         });
-    
+    ///next mission remov googel map leichen
         function initializeMap() {
             var mapElements = $('[data-map]');
     
