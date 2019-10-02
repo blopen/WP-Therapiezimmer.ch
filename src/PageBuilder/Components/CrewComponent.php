@@ -37,7 +37,7 @@ class CrewComponent extends BaseComponent implements IStringRenderable
     {
         parent::__construct('Crew', $postId, $index, $containerClass);
         $this->title = $this->getComponentField('title');
-        $this->posts = $this->getComponentRepeaterField("Crews_repeater", ['post_type' => "Crews"]);
+        $this->posts = $this->getComponentRepeaterField("crews_repeater", ['post_type' => "crews"]);
         $this->createCards();
     }
     
@@ -45,7 +45,7 @@ class CrewComponent extends BaseComponent implements IStringRenderable
     {
         $cards = [];
         foreach ($this->posts as $post) {
-            $cards[] = new CrewCard($post->Crews);
+            $cards[] = new CrewCard($post->crews);
         }
         $this->cards = $cards;
     }

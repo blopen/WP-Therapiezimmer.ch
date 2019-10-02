@@ -24,7 +24,7 @@
         {
             "key": "field_5c81329051513",
             "label": "Crew",
-            "name": "crew_repeater",
+            "name": "crews_repeater",
             "type": "repeater",
             "instructions": "",
             "required": 0,
@@ -80,5 +80,5 @@
     "hide_on_screen": "",
     "active": 0,
     "description": "",
-    "modified": 1570009535
+    "modified": 1570015253
 }
