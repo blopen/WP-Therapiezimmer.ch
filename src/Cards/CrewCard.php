@@ -3,13 +3,13 @@
 namespace Cubetech\Cards;
 
 /**
- * Class for an team card handling
+ * Class for an Crew card handling
  *
  * @author Steeve Jeannin <steeve@cubetech.ch>
  * @since 0.0.1
  * @version 1.0.0
  */
-class TeamCard extends BaseCard
+class CrewCard extends BaseCard
 {
     /**
      * Initializes class properties
@@ -23,7 +23,7 @@ class TeamCard extends BaseCard
      */
     public function __construct($postId)
     {
-        parent::__construct("TeamCard", $postId);
+        parent::__construct("CrewCard", $postId);
         $this->title = $this->extractTitle();
         $this->imageId = intval($this->extractImage());
         $this->imageURL = $this->imageId ? wp_get_attachment_url($this->imageId) : "";

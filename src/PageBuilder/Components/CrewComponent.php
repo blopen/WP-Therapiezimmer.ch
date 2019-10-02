@@ -2,17 +2,17 @@
 
 namespace Cubetech\PageBuilder\Components;
 
-use Cubetech\Cards\TeamCard;
+use Cubetech\Cards\CrewCard;
 use \Cubetech\Rendering\IStringRenderable;
 
 /**
- * Team component class for pagebuilder
+ * Crew component class for pagebuilder
  *
  * @author Steeve Jeannin <steeve@cubetech.ch>
  * @version 1.0.0
  * @since 1.0.0
  */
-class TeamComponent extends BaseComponent implements IStringRenderable
+class CrewComponent extends BaseComponent implements IStringRenderable
 {
     
     /**
@@ -35,9 +35,9 @@ class TeamComponent extends BaseComponent implements IStringRenderable
      */
     public function __construct($postId, $index, $containerClass)
     {
-        parent::__construct('Team', $postId, $index, $containerClass);
+        parent::__construct('Crew', $postId, $index, $containerClass);
         $this->title = $this->getComponentField('title');
-        $this->posts = $this->getComponentRepeaterField("teams_repeater", ['post_type' => "teams"]);
+        $this->posts = $this->getComponentRepeaterField("crews_repeater", ['post_type' => "crews"]);
         $this->createCards();
     }
     
@@ -45,7 +45,7 @@ class TeamComponent extends BaseComponent implements IStringRenderable
     {
         $cards = [];
         foreach ($this->posts as $post) {
-            $cards[] = new TeamCard($post->teams);
+            $cards[] = new CrewCard($post->crews);
         }
         $this->cards = $cards;
     }
@@ -71,7 +71,7 @@ class TeamComponent extends BaseComponent implements IStringRenderable
     
     /**
      * Validates the component for this particular component
-     * Both the title property and at least one team are needed
+     * Both the title property and at least one Crew are needed
      * and therefore both must have been set
      *
      * @return boolean

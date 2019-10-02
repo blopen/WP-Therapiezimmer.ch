@@ -1,7 +1,63 @@
 {
     "key": "group_5d010d584b41f",
-    "title": "Posttype: Team",
+    "title": "Crew",
     "fields": [
+        {
+            "key": "field_5d010ddab7c75",
+            "label": "Telefon",
+            "name": "phone",
+            "type": "text",
+            "instructions": "Geben Sie die Geschäftsnummer des Teammitgliedes an.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5d010df4b7c76",
+            "label": "Soziale Medien",
+            "name": "social_medias",
+            "type": "repeater",
+            "instructions": "Verlinken Sie die Sozialen Medien Accounts",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_5d010e2db7c77",
+                    "label": "Link",
+                    "name": "social_media_link",
+                    "type": "url",
+                    "instructions": "Geben Sie die Url auf den Account an.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": ""
+                }
+            ]
+        },
         {
             "key": "field_5d010d61b7c72",
             "label": "Bild",
@@ -62,62 +118,6 @@
             "placeholder": "",
             "prepend": "",
             "append": ""
-        },
-        {
-            "key": "field_5d010ddab7c75",
-            "label": "Telefon",
-            "name": "phone",
-            "type": "text",
-            "instructions": "Geben Sie die Geschäftsnummer des Teammitgliedes an.",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_5d010df4b7c76",
-            "label": "Soziale Medien",
-            "name": "social_medias",
-            "type": "repeater",
-            "instructions": "Verlinken Sie die Sozialen Medien Accounts",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "collapsed": "",
-            "min": 0,
-            "max": 0,
-            "layout": "table",
-            "button_label": "",
-            "sub_fields": [
-                {
-                    "key": "field_5d010e2db7c77",
-                    "label": "Link",
-                    "name": "social_media_link",
-                    "type": "url",
-                    "instructions": "Geben Sie die Url auf den Account an.",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": ""
-                }
-            ]
         }
     ],
     "location": [
@@ -125,7 +125,7 @@
             {
                 "param": "post_type",
                 "operator": "==",
-                "value": "team"
+                "value": "crew"
             }
         ]
     ],
@@ -150,5 +150,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1560431064
+    "modified": 1570010485
 }
