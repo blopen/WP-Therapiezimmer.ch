@@ -1,13 +1,13 @@
-# wptheme.basetheme
+# wptheme.therapiezimmer.ch
 
 ## Description
 
-This Theme is in use on the website REPLACE by REPLACE.
+This Theme is in use on the website Therapiezimmer.ch by @blopen.
 
 ## Person Responsible
 
-REPLACE
+Nelson Lopez
 
 ## Contributors
 
-* REPLACE
+* Nelson Lopez
