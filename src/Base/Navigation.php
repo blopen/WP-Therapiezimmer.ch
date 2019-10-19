@@ -187,18 +187,21 @@ class Navigation implements \Serializable
      */
     public function printRecursiveNavigation(int $maxDepth)
     {
-        echo '<nav class="uk-navbar-container" data-uk-navbar>';
-        echo '<div class="uk-navbar">';
-        
-        if (is_array($this->menuItems)) {
+        $this->addActiveClasses();
+        if (wp_is_mobile() === false) {
+            echo '<nav class="uk-navbar-container tz-navbar" data-uk-navbar>';
+            echo '<div class="uk-navbar">';
             $this->printItems($this->menuItems, $maxDepth, 1);
+            echo '</div>';
+            echo '</nav>';
+        } else {
+            echo '<nav class="uk-navbar-container tz-navbar-mobile" data-uk-navbar>';
+            echo '<div class="uk-navbar">';
+            $this->printItems($this->menuItems, $maxDepth, 1);
+            echo '</div>';
+            echo '<div class="tz-burger"><span></span><span></span><span></span></div>';
+            echo '</nav>';
         }
-        else {
-            echo '<p class="uk-text-center uk-text-danger">No Navigation found</p>';
-        }
-        
-        echo '</div>';
-        echo '</nav>';
     }
     
     /**

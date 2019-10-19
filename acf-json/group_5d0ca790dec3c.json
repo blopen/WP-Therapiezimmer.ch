@@ -20,6 +20,36 @@
             "endpoint": 0
         },
         {
+            "key": "field_5d0ca7a0fe472",
+            "label": "Inhaltstyp",
+            "name": "posttype",
+            "type": "select",
+            "instructions": "Wählen Sie den Inhaltstyp der für diese Übersichtseite verwendet werden soll.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "post": "Beitrag",
+                "download": "Downloads",
+                "event": "Termine",
+                "crew": "Crew",
+                "song": "Songs"
+            },
+            "default_value": [
+                "post"
+            ],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
             "key": "field_5d0ca7915a09c",
             "label": "Seiteninformationen",
             "name": "page_details",
@@ -56,34 +86,6 @@
             "open": 0,
             "multi_expand": 0,
             "endpoint": 0
-        },
-        {
-            "key": "field_5d0ca7a0fe472",
-            "label": "Inhaltstyp",
-            "name": "posttype",
-            "type": "select",
-            "instructions": "Wählen Sie den Inhaltstyp der für diese Übersichtseite verwendet werden soll.",
-            "required": 1,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "choices": {
-                "post": "Beitrag",
-                "download": "Downloads",
-                "event": "Termine"
-            },
-            "default_value": [
-                "post"
-            ],
-            "allow_null": 0,
-            "multiple": 0,
-            "ui": 0,
-            "return_format": "value",
-            "ajax": 0,
-            "placeholder": ""
         }
     ],
     "location": [
@@ -115,5 +117,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1561527424
+    "modified": 1571500270
 }

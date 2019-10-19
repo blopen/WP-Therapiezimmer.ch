@@ -101,7 +101,13 @@ abstract class BaseCard implements IRenderable
      */
     public function hasCategories()
     {
-        return count($this->categories) > 0;
+        if(is_array($this->categories)||is_object($this->categories)){
+            $mountOfCategories = count($this->categories) > 0;
+        }else{
+            $mountOfCategories = false;
+        }
+        
+        return $mountOfCategories;
     }
     
     /**

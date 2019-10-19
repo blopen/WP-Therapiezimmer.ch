@@ -1,0 +1,74 @@
+{
+    "key": "group_5dab2e4b2813b",
+    "title": "Posttype: Crew",
+    "fields": [
+        {
+            "key": "field_5dab2e4b2e446",
+            "label": "Datei",
+            "name": "file",
+            "type": "file",
+            "instructions": "Laden Sie eine Datei hoch.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_size": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5dab2e4b2e44b",
+            "label": "Beschreibung",
+            "name": "leadtext",
+            "type": "textarea",
+            "instructions": "Geben Sie eine kurze Beschreibung zu der Datei.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "crew"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content",
+        "excerpt",
+        "discussion",
+        "comments",
+        "revisions",
+        "format",
+        "page_attributes",
+        "featured_image",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1571499636
+}

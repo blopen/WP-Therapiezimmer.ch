@@ -98,7 +98,7 @@ class CrewPosttype extends APosttype
             'publicly_queryable'  => false,
             'capability_type'     => 'post',
             'map_meta_cap'        => true,
-            'rewrite'             => ['slug' => _x('mitarbeiter', 'Slug for posttype mitarbeiter', 'wptheme-basetheme')],
+            'rewrite'             => ['slug' => _x('crew', 'Slug for posttype crew', 'wptheme-basetheme')],
             'menu_icon'           => 'dashicons-groups',
         ];
     }
