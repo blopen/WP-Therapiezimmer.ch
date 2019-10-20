@@ -61,30 +61,6 @@ class SongPosttype extends APosttype
         $args = [
             'hierarchical' => true,
             'labels' => [
-                'name' =>               _x('Hauptkomponenten', 'General name', 'wptheme-ditzler'),
-                'singular_name' =>      _x('Hauptkomponente', 'Singular name', 'wptheme-ditzler'),
-                'menu_name' =>          _x('Hauptkomponenten', 'Menu name', 'wptheme-ditzler'),
-                'parent_item_colon' =>  _x('Übergeordnete Hauptkomponente', 'Parent item with colon', 'wptheme-ditzler'),
-                'all_items' =>          _x('Alle Hauptkomponenten', 'All items', 'wptheme-ditzler'),
-                'view_item' =>          _x('Hauptkomponente ansehen', 'View item', 'wptheme-ditzler'),
-                'add_new_item' =>       _x('Hauptkomponente hinzufügen', 'Add new item', 'wptheme-ditzler'),
-                'add_new' =>            _x('Hauptkomponente hinzufügen', 'Add new', 'wptheme-ditzler'),
-                'edit_item' =>          _x('Hauptkomponente bearbeiten', 'Edit item', 'wptheme-ditzler'),
-                'update_item' =>        _x('Hauptkomponente aktualisieren', 'Update item', 'wptheme-ditzler'),
-                'search_items' =>       _x('Hauptkomponenten suchen', 'Search items', 'wptheme-ditzler'),
-                'not_found' =>          _x('Keine Hauptkomponente gefunden.', 'Not found', 'wptheme-ditzler'),
-                'not_found_in_trash' => _x('Keine Hauptkomponente im Papierkorb gefunden.', 'Not found in trash', 'wptheme-ditzler'),
-            ],
-            'public' =>             true,
-            'show_ui' =>            true,
-            'show_admin_column' =>  true,
-            'query_var' =>          true,
-            'rewrite' =>            ['slug' => 'hauptkomponenten-category'],
-        ];
-        register_taxonomy('hauptkomponenten-category', ['song'], $args);
-        $args = [
-            'hierarchical' => true,
-            'labels' => [
                 'name' =>               _x('Genre', 'General name', 'wptheme-ditzler'),
                 'singular_name' =>      _x('Genre', 'Singular name', 'wptheme-ditzler'),
                 'menu_name' =>          _x('Genre', 'Menu name', 'wptheme-ditzler'),

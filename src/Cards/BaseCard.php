@@ -21,21 +21,22 @@ abstract class BaseCard implements IRenderable
      * and to automate the inclusion of the correct view file
      */
     use RenderableTrait;
-    
+
     /**
      * postvariable
      *
      * @var CubetechPost
      */
     public $post;
-    
+    public $url;
+
     /**
      * Array containing all categories set to this post
      *
      * @var array
      */
     private $categories;
-    
+
     /**
      * Initializes class properties
      *
@@ -54,7 +55,7 @@ abstract class BaseCard implements IRenderable
         $this->categories = $this->extractCategories();
         $this->viewDirectory = get_template_directory() . '/views/cards/';
     }
-    
+
     /**
      * Checks if the optional card title is set
      * Defaults to the post tile if empty
@@ -71,7 +72,7 @@ abstract class BaseCard implements IRenderable
         }
         return $this->post->getTitle();
     }
-    
+
     /**
      * Checks if the optional card lead is set
      * Defaults to the post leadtext if empty
@@ -89,7 +90,7 @@ abstract class BaseCard implements IRenderable
         }
         return $this->post->getField('leadtext');
     }
-    
+
     /**
      * Checks if categories are set
      *
@@ -101,15 +102,15 @@ abstract class BaseCard implements IRenderable
      */
     public function hasCategories()
     {
-        if(is_array($this->categories)||is_object($this->categories)){
+        if (is_array($this->categories) || is_object($this->categories)) {
             $mountOfCategories = count($this->categories) > 0;
-        }else{
+        } else {
             $mountOfCategories = false;
         }
-        
+
         return $mountOfCategories;
     }
-    
+
     /**
      * Gets the categories set to this post
      *
@@ -132,7 +133,7 @@ abstract class BaseCard implements IRenderable
         }
         return false;
     }
-    
+
     /**
      * get a string with a delimiter of all categories names set to this post
      *
@@ -157,7 +158,7 @@ abstract class BaseCard implements IRenderable
         }
         return false;
     }
-    
+
     /**
      * get a string with a delimiter of all categories slugs set to this post
      *
@@ -182,7 +183,7 @@ abstract class BaseCard implements IRenderable
         }
         return null;
     }
-    
+
     /**
      * Get a list of names of the categories set to this post
      *
@@ -203,7 +204,7 @@ abstract class BaseCard implements IRenderable
         }
         return false;
     }
-    
+
     /**
      * Get a list of slug of the categories set to this post
      *
@@ -224,7 +225,7 @@ abstract class BaseCard implements IRenderable
         }
         return false;
     }
-    
+
     /**
      * Checks if values in a property is set and not empty
      *
@@ -239,7 +240,7 @@ abstract class BaseCard implements IRenderable
     {
         return !empty($this->$key);
     }
-    
+
     /**
      * Render method for _every_ card. This is so each card is
      * checked for its validity before it is rendered.

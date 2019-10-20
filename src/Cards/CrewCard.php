@@ -21,15 +21,18 @@ class CrewCard extends BaseCard
      * @version 1.0.0
      * @since 1.0.0
      */
+
     public function __construct($postId)
     {
         parent::__construct("CrewCard", $postId);
+        $post = new \Cubetech\Base\CubetechPost($postId);
         $this->title = $this->extractTitle();
         $this->imageId = intval($this->extractImage());
         $this->imageURL = $this->imageId ? wp_get_attachment_url($this->imageId) : "";
         $this->function = $this->extractSimpleString("function");
         $this->email = $this->extractSimpleString("email");
         $this->phone = $this->extractSimpleString("phone");
+        $this->url = $post->getLink();
         $this->socialMediaAccounts = $this->post->getRepeaterField("social_medias", ["social_media_link"]);
     }
     

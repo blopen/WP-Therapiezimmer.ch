@@ -1,7 +1,8 @@
-$team-boxshadow-color: $font-color;
-$team-link-color: $primary-color;
-$team-background-icons: $global-background;
-
-.ct-component-crew {
-
+.ct-card-crew-image{
+    width: 50%;
+    height: auto;
+    border-radius: 50%;
+}
+.ct-card-crew{
+    background: #15a000;
 }
