@@ -1,3 +1,3 @@
-<div class="uk-container  tz-front-page">
+<div class="uk-container  ipa-song-page">
 <?php echo $this->logic->post->content; ?>
 </div>

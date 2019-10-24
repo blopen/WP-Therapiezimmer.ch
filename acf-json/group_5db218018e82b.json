@@ -1,13 +1,32 @@
 {
-    "key": "group_5dab2e4b2813b",
-    "title": "Posttype: Crew",
+    "key": "group_5db218018e82b",
+    "title": "Posttype: Song",
     "fields": [
         {
-            "key": "field_5dab2e4b2e446",
-            "label": "Datei",
-            "name": "file",
+            "key": "field_5db21885626e8",
+            "label": "Editor",
+            "name": "editor",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_5db21801b4a95",
+            "label": "Audio",
+            "name": "audio",
             "type": "file",
-            "instructions": "Laden Sie eine Datei hoch.",
+            "instructions": "Geben Sie die Email-Adresse an.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -20,25 +39,6 @@
             "min_size": "",
             "max_size": "",
             "mime_types": ""
-        },
-        {
-            "key": "field_5dab2e4b2e44b",
-            "label": "Beschreibung",
-            "name": "leadtext",
-            "type": "textarea",
-            "instructions": "Geben Sie eine kurze Beschreibung zu der Datei.",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "maxlength": "",
-            "rows": "",
-            "new_lines": ""
         }
     ],
     "location": [
@@ -46,7 +46,7 @@
             {
                 "param": "post_type",
                 "operator": "==",
-                "value": "crew"
+                "value": "song"
             }
         ]
     ],
@@ -61,6 +61,7 @@
         "discussion",
         "comments",
         "revisions",
+        "author",
         "format",
         "page_attributes",
         "featured_image",
@@ -70,5 +71,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1571499636
+    "modified": 1571952858
 }

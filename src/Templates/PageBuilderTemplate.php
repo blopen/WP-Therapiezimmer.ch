@@ -22,7 +22,6 @@ class PageBuilderTemplate extends BaseTemplate
     public function __construct()
     {
         parent::__construct('PageBuilder');
-        
         $header = new TemplatePart('headers/default-header', new HeaderLogic());
         $this->headerList->append($header);
         

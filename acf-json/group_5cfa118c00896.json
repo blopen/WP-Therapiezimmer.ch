@@ -326,6 +326,37 @@
                     "min": "",
                     "max": ""
                 },
+                "layout_5db1f51b407fe": {
+                    "key": "layout_5db1f51b407fe",
+                    "name": "Song",
+                    "label": "Song",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5db1f51b407ff",
+                            "label": "Song Felder",
+                            "name": "Song_fields",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5db205d4afa65"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 1
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
                 "layout_5cece6dc4eafc": {
                     "key": "layout_5cece6dc4eafc",
                     "name": "Download",
@@ -485,5 +516,5 @@
     ],
     "active": 0,
     "description": "",
-    "modified": 1570010111
+    "modified": 1571948277
 }
