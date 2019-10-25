@@ -1,6 +1,6 @@
 {
     "key": "group_5d010d584b41f",
-    "title": "Crew",
+    "title": "Posttype: Crew",
     "fields": [
         {
             "key": "field_5d010ddab7c75",
@@ -150,5 +150,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1570010485
+    "modified": 1571947936
 }

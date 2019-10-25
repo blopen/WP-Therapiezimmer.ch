@@ -93,12 +93,12 @@ class CrewPosttype extends APosttype
             'show_in_nav_menus'   => true,
             'show_in_admin_bar'   => true,
             'can_export'          => true,
-            'has_archive'         => false,
+            'has_archive'         => true,
             'exclude_from_search' => false,
-            'publicly_queryable'  => false,
+            'publicly_queryable'  => true,
             'capability_type'     => 'post',
             'map_meta_cap'        => true,
-            'rewrite'             => ['slug' => _x('mitarbeiter', 'Slug for posttype mitarbeiter', 'wptheme-basetheme')],
+            'rewrite'             => ['slug' => _x('crew', 'Slug for posttype crew', 'wptheme-basetheme')],
             'menu_icon'           => 'dashicons-groups',
         ];
     }

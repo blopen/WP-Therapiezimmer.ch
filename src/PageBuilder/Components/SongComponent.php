@@ -2,7 +2,7 @@
 
 namespace Cubetech\PageBuilder\Components;
 
-use Cubetech\Cards\CrewCard;
+use Cubetech\Cards\SongCard;
 use \Cubetech\Rendering\IStringRenderable;
 
 /**
@@ -12,7 +12,7 @@ use \Cubetech\Rendering\IStringRenderable;
  * @version 1.0.0
  * @since 1.0.0
  */
-class CrewComponent extends BaseComponent implements IStringRenderable
+class SongComponent extends BaseComponent implements IStringRenderable
 {
     
     /**
@@ -22,6 +22,7 @@ class CrewComponent extends BaseComponent implements IStringRenderable
      * @var string
      */
     protected $title;
+    protected $description;
     
     /**
      * Constructor method for this component
@@ -35,9 +36,13 @@ class CrewComponent extends BaseComponent implements IStringRenderable
      */
     public function __construct($postId, $index, $containerClass)
     {
-        parent::__construct('Crew', $postId, $index, $containerClass);
+        parent::__construct('Song', $postId, $index, $containerClass);
         $this->title = $this->getComponentField('title');
-        $this->posts = $this->getComponentRepeaterField("crews_repeater", ['post_type' => "crews"]);
+        $this->description = $this->getComponentField('song_description');
+        $this->posts = $this->getComponentRepeaterField("songs_repeater", ['post_type' => "song"]);
+       
+        var_dump("POST IST:".$this->posts);
+        
         $this->createCards();
     }
     
@@ -45,8 +50,9 @@ class CrewComponent extends BaseComponent implements IStringRenderable
     {
         $cards = [];
         foreach ($this->posts as $post) {
-            $cards[] = new CrewCard($post->crews);
+            $cards[] = new SongCard($post->song);
         }
+        var_dump("caRD IST:".$this->posts);
         $this->cards = $cards;
     }
     

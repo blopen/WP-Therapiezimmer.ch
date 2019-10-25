@@ -86,6 +86,13 @@
                 "operator": "==",
                 "value": "template-pagebuilder.php"
             }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "song"
+            }
         ]
     ],
     "menu_order": 0,
@@ -108,5 +115,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1561528428
+    "modified": 1571981842
 }

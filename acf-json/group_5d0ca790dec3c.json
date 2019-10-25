@@ -73,7 +73,9 @@
             "choices": {
                 "post": "Beitrag",
                 "download": "Downloads",
-                "event": "Termine"
+                "event": "Termine",
+                "crew": "Crew",
+                "song": "Songs"
             },
             "default_value": [
                 "post"
@@ -115,5 +117,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1561527424
+    "modified": 1571941791
 }

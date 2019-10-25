@@ -20,6 +20,7 @@
 <!-- Own CSS -->
 <link rel="stylesheet" href="https://www.therapiezimmer.ch/wp-content/themes/wptheme.therapiezimmer.ch/assets/src/styles/base/global.css" />
 <link rel="stylesheet" href="https://www.therapiezimmer.ch/wp-content/themes/wptheme.therapiezimmer.ch/assets/src/styles/cards/cards.css" />
+<link rel="stylesheet" href="https://www.therapiezimmer.ch/wp-content/themes/wptheme.therapiezimmer.ch/assets/src/styles/cards/crew.css" />
 <link rel="stylesheet" href="https://www.therapiezimmer.ch/wp-content/themes/wptheme.therapiezimmer.ch/assets/src/styles/components/timeline.css" />
 <link rel="stylesheet" href="https://www.therapiezimmer.ch/wp-content/themes/wptheme.therapiezimmer.ch/assets/src/styles/components/navigation.css" />
 <link rel="stylesheet" href="https://www.therapiezimmer.ch/wp-content/themes/wptheme.therapiezimmer.ch/assets/src/styles/components/map.css" />

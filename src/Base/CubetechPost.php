@@ -10,54 +10,45 @@ namespace Cubetech\Base;
  */
 class CubetechPost extends ACFWrapper
 {
-    
     /**
      * The Post ID (WP_Post->ID)
      *
      * @var int
      */
     private $id;
-    
     /**
      * The Post title (WP_Post->post_title)
      *
      * @var string
      */
     private $title;
-    
     /**
      * The Post slug (WP_Post->post_name)
      *
      * @var string
      */
     private $slug;
-    
     /**
      * The Post excerpt (WP_Post->post_excerpt)
      *
      * @var string
      */
     private $excerpt;
-    
     /**
      * The Post content (WP_Post->post_content)
      * @var string
      */
-
     public $content;
-
     /**
      * The Posttype (WP_Post->post_type)
      * @var string
      */
     private $posttype;
-    
     /**
      * The Posts Author's ID (WP_Post->post_author)
      * @var int
      */
     private $authorId;
-    
     /**
      * The post's creation date (WP_Post->post_date)
      * as UNIX-Timestamp
@@ -65,7 +56,6 @@ class CubetechPost extends ACFWrapper
      * @var int
      */
     private $date;
-    
     /**
      * The post's last modification date (WP_Post->post_modified)
      * as UNIX-Timestamp
@@ -73,14 +63,12 @@ class CubetechPost extends ACFWrapper
      * @var int
      */
     private $modified;
-    
     /**
      * The post's permalink
      *
      * @var string
      */
     private $link;
-    
     /**
      * Initializes the CubetechPost and fetches all needed property values
      * from the associated WP_Post
@@ -98,21 +86,18 @@ class CubetechPost extends ACFWrapper
         if ($id === false) {
             return;
         }
-        
         if (is_numeric($id)) {
             $this->id = $id;
             $wpPost = get_post($this->id);
-            
-        }
-        else if ($id instanceof \Cubetech\Base\CubetechPost) {
+        } else if ($id instanceof \Cubetech\Base\CubetechPost) {
             $this->id = $id->id;
             $wpPost = get_post($this->id);
-        }
-        else if ($id instanceof \WP_Post) {
+        } else if ($id instanceof \WP_Post) {
             $this->id = $id->ID;
             $wpPost = $id;
+        } else {
+            throw new \Exception('$id must be set');
         }
-        
         $this->title = $wpPost->post_title;
         $this->slug = $wpPost->post_name;
         $this->excerpt = $wpPost->post_excerpt;
@@ -123,8 +108,6 @@ class CubetechPost extends ACFWrapper
         $this->modified = strtotime($wpPost->post_modified);
         $this->link = get_permalink($wpPost->ID);
     }
-    
-    
     /**
      * Gets the post id
      *
@@ -139,7 +122,6 @@ class CubetechPost extends ACFWrapper
     {
         return $this->id;
     }
-    
     /**
      * Gets the post slug
      *
@@ -153,7 +135,6 @@ class CubetechPost extends ACFWrapper
     {
         return $this->slug;
     }
-    
     /**
      * Gets the post title
      *
@@ -168,7 +149,6 @@ class CubetechPost extends ACFWrapper
     {
         return $this->title;
     }
-    
     /**
      * Gets the post excerpt
      *
@@ -183,7 +163,6 @@ class CubetechPost extends ACFWrapper
     {
         return $this->excerpt;
     }
-    
     /**
      * Gets the post content
      *
@@ -198,7 +177,6 @@ class CubetechPost extends ACFWrapper
     {
         return $this->content;
     }
-    
     /**
      * Gets the posttype
      *
@@ -212,7 +190,6 @@ class CubetechPost extends ACFWrapper
     {
         return $this->posttype;
     }
-    
     /**
      * Gets the post categories
      *
@@ -226,7 +203,6 @@ class CubetechPost extends ACFWrapper
     {
         return $this->getField('taxonomies');
     }
-    
     /**
      * Gets the posts authors id
      *
@@ -241,7 +217,6 @@ class CubetechPost extends ACFWrapper
     {
         return $this->authorId;
     }
-    
     /**
      * Gets the posts permalink
      *
@@ -256,7 +231,6 @@ class CubetechPost extends ACFWrapper
     {
         return $this->link;
     }
-    
     /**
      * Gets the posts creation date, optionally formatted with $format
      *
@@ -275,7 +249,6 @@ class CubetechPost extends ACFWrapper
         }
         return $this->date;
     }
-    
     /**
      * Gets the posts modified date, optionally formatted with $format
      *
@@ -294,7 +267,6 @@ class CubetechPost extends ACFWrapper
         }
         return $this->modified;
     }
-    
     /**
      * Checks a field for its validity
      *
