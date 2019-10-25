@@ -42,6 +42,7 @@ class TemplatePart extends ACFWrapper implements IRenderable
     public function __construct(string $name, ILogic $logic = null, array $data = [])
     {
         $this->initializeRenderable('template-parts', 'TemplatePart', $name, $logic, $data);
+
         $this->id = get_the_ID();
         if ($logic !== null) {
             $this->logic = $logic;

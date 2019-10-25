@@ -154,7 +154,7 @@ class SongPosttype extends APosttype
             'publicly_queryable'  => true,
             'capability_type'     => 'post',
             'map_meta_cap'        => true,
-            'rewrite'             => ['slug' => _x('songs', 'Slug for posttype song', 'wptheme-therapiezimmer')],
+            'rewrite'             => ['slug' => _x('song', 'Slug for posttype song', 'wptheme-therapiezimmer')],
             'menu_icon'           => 'dashicons-controls-volumeon',
         ];
     }
