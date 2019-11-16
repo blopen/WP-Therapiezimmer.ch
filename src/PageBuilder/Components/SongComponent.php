@@ -52,7 +52,7 @@ class SongComponent extends BaseComponent implements IStringRenderable
         foreach ($this->posts as $post) {
             $cards[] = new SongCard($post->song);
         }
-        var_dump("caRD IST:".$this->posts);
+       // var_dump("caRD IST:".$this->posts);
         $this->cards = $cards;
     }
     

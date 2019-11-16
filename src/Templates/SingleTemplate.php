@@ -26,19 +26,20 @@ class SingleTemplate extends BaseTemplate
     {
         $post = new CubetechPost(get_the_id());
         $header = new TemplatePart('headers/default-header', new HeaderLogic());
+        $posttype = $post->getPosttype();
 
         
         if ($post->getField('pagebuilder')) {
-            var_dump($post);
             parent::__construct('PageBuilder');
         }
-        /*else if ($post->getPosttype() == "song") {
+        else if ($posttype != "post") {
             
-            parent::__construct('Song');
-        }*/
+            var_dump(parent::__construct(ucfirst($posttype)));
+         //   var_dump($this);
+        }
         else {
             parent::__construct('Page');
-            var_dump($post);
+
         }
         
         $this->headerList->append($header);
@@ -46,6 +47,10 @@ class SingleTemplate extends BaseTemplate
         if ($post->getField('pagebuilder')) {
             $this->contentList->append(new PageBuilder($this->primaryPostId));
 
+        }
+        else if ($post->getPosttype() != "post") {
+            
+            $this->contentList->append(new TemplatePart($posttype.'-page-content'));
         }
         else {
             $this->contentList->append(new TemplatePart('default-page-content'));

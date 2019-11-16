@@ -23,5 +23,8 @@ class PageTemplate extends BaseTemplate
         $header = new TemplatePart('headers/default-header', new HeaderLogic());
         $this->headerList->append($header);
         $this->contentList->append(new TemplatePart('default-page-content'));
+        //
+        var_dump(99);
+        die();
     }
 }

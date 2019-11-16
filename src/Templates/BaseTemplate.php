@@ -53,7 +53,7 @@ abstract class BaseTemplate
         $this->footerList = new RenderableList();
         $this->navigation = new TemplatePart('navigations/navigation', new NavigationLogic('primary'));
         $this->footerList->append($footer);
-        var_dump($this->contentList);
+       // var_dump($this->contentList);
     }
     
     public function setSidebar(\Cubetech\Sidebars\BaseSidebar $sidebar)
